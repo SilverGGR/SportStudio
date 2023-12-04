@@ -4,10 +4,16 @@ namespace SportStudio
 {
     public class SportStudio
     {
+        private int id { get; set; }
+        private string name { get; set; }
+        private Address address { get; set; }
 
-        public int Id; { get; set; }
-        public string Name; { get; set; }
-        public Address Address; { get; set; }
+        public SportStudio(int id, string name, Address address)
+        {
+            this.id = id;
+            this.name = name;
+            this.address = address;
+        }
 
     }
 }
