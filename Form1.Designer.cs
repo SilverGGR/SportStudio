@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             pictureBox1 = new PictureBox();
             label1 = new Label();
             linkHome = new Label();
@@ -35,6 +36,9 @@
             linkAnmeldung = new Label();
             label2 = new Label();
             panelMuki = new Panel();
+            pictureBox2 = new PictureBox();
+            label4 = new Label();
+            label3 = new Label();
             buttonMuki = new Button();
             buttonSauna = new Button();
             panelSauna = new Panel();
@@ -42,10 +46,9 @@
             panelCardio = new Panel();
             buttonWasser = new Button();
             panelWasser = new Panel();
-            label3 = new Label();
-            label4 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panelMuki.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panelSauna.SuspendLayout();
             panelCardio.SuspendLayout();
             panelWasser.SuspendLayout();
@@ -120,12 +123,42 @@
             // 
             panelMuki.BackColor = Color.FromArgb(255, 192, 192);
             panelMuki.Controls.Add(buttonMuki);
+            panelMuki.Controls.Add(pictureBox2);
             panelMuki.Controls.Add(label4);
             panelMuki.Controls.Add(label3);
             panelMuki.Location = new Point(12, 93);
             panelMuki.Name = "panelMuki";
             panelMuki.Size = new Size(500, 250);
             panelMuki.TabIndex = 6;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(276, 3);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(221, 244);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 8;
+            pictureBox2.TabStop = false;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(3, 47);
+            label4.Name = "label4";
+            label4.Size = new Size(163, 100);
+            label4.TabIndex = 9;
+            label4.Text = "Größ\r\nAnzahl der Sportgeräte\r\nMuskelgruppen\r\nCoaches\r\nPreis\r\n";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Monocraft", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(72, 14);
+            label3.Name = "label3";
+            label3.Size = new Size(140, 26);
+            label3.TabIndex = 8;
+            label3.Text = "Mukibude";
             // 
             // buttonMuki
             // 
@@ -189,24 +222,6 @@
             panelWasser.Size = new Size(500, 250);
             panelWasser.TabIndex = 8;
             // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(91, 61);
-            label3.Name = "label3";
-            label3.Size = new Size(85, 20);
-            label3.TabIndex = 8;
-            label3.Text = "Just a Label";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(51, 115);
-            label4.Name = "label4";
-            label4.Size = new Size(85, 20);
-            label4.TabIndex = 9;
-            label4.Text = "Just a Label";
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -227,6 +242,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panelMuki.ResumeLayout(false);
             panelMuki.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panelSauna.ResumeLayout(false);
             panelCardio.ResumeLayout(false);
             panelWasser.ResumeLayout(false);
@@ -252,5 +268,6 @@
         private Panel panelWasser;
         private Label label4;
         private Label label3;
+        private PictureBox pictureBox2;
     }
 }
