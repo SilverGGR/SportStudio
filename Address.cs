@@ -2,19 +2,19 @@ namespace SportStudio
 {
     public class Address
     {
-        public int Id { get; set; }
-        public string Street { get; set; }
-        public string City { get; set; }
-        public string Country { get; set; }
-        public string ZipCode { get; set; }
+        public Guid id { get; }
+        public string street { get; set; }
+        public string city { get; set; }
+        public string country { get; set; }
+        public string zipCode { get; set; }
 
-        //public Address(int id, string street, string city, string country, string zipCode)
-        //{
-        //    this.id = id;
-        //    this.street = street;
-        //    this.city = city;
-        //    this.country = country;
-        //    this.zipCode = zipCode;
-        //}
+        public Address(string street, string city, string country, string zipCode)
+        {
+            this.id = Guid.NewGuid();
+            this.street = street;
+            this.city = city;
+            this.country = country;
+            this.zipCode = zipCode;
+        }
     }
 }

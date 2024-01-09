@@ -13,8 +13,8 @@ namespace SportStudio
         private bool student { get; set; }
         private Membership membership { get; set; }
 
-        public Customer(int id, string firstName, string lastName, string dateOfBirth, Address address, bool student, Membership membership)
-            : base(id, firstName, lastName, dateOfBirth, address)
+        public Customer(string firstName, string lastName, string dateOfBirth, Address address, bool student, Membership membership)
+            : base(firstName, lastName, dateOfBirth, address)
         {
             this.student = student;
             this.membership = membership;

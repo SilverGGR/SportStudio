@@ -1,17 +1,17 @@
-﻿using System;
-
-namespace SportStudio
+﻿namespace SportStudio
 {
     public class SportStudio
     {
-        private int id { get; set; }
-        private string name { get; set; }
+        public Guid id { get; }
+
+        private string name { get; }
+
         private Address address { get; set; }
 
-        public SportStudio(int id, string name, Address address)
+        public SportStudio(Address address)
         {
-            this.id = id;
-            this.name = name;
+            this.id = Guid.NewGuid();
+            this.name = "Sport und so";
             this.address = address;
         }
 

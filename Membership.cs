@@ -2,15 +2,15 @@ namespace SportStudio
 {
     public class Membership
     {
-        private int id { get; set; }
+        private Guid id { get; }
         private string[] modules { get; set; }
         private double monthlyFee { get; set; }
         private string startDate { get; set; }
         private string endDate { get; set; }
 
-        public Membership(int id, string[] modules, double monthlyFee, string startDate, string endDate)
+        public Membership(string[] modules, double monthlyFee, string startDate, string endDate)
         {
-            this.id = id;
+            this.id = Guid.NewGuid();
             this.modules = modules;
             this.monthlyFee = monthlyFee;
             this.startDate = startDate;
