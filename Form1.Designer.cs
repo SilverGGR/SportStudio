@@ -36,10 +36,10 @@
             linkAnmeldung = new Label();
             label2 = new Label();
             panelMuki = new Panel();
+            buttonMuki = new Button();
             pictureBox2 = new PictureBox();
             label4 = new Label();
             label3 = new Label();
-            buttonMuki = new Button();
             buttonSauna = new Button();
             panelSauna = new Panel();
             buttonCardio = new Button();
@@ -60,7 +60,7 @@
             pictureBox1.BackColor = Color.FromArgb(217, 46, 24);
             pictureBox1.Location = new Point(0, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1031, 62);
+            pictureBox1.Size = new Size(1065, 62);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
@@ -69,7 +69,7 @@
             label1.AutoSize = true;
             label1.BackColor = Color.FromArgb(217, 46, 24);
             label1.Font = new Font("Monocraft", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(320, 9);
+            label1.Location = new Point(368, 9);
             label1.Name = "label1";
             label1.Size = new Size(330, 41);
             label1.TabIndex = 1;
@@ -80,7 +80,7 @@
             linkHome.AutoSize = true;
             linkHome.BackColor = Color.FromArgb(217, 46, 24);
             linkHome.Font = new Font("Monocraft", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            linkHome.Location = new Point(737, 28);
+            linkHome.Location = new Point(774, 28);
             linkHome.Name = "linkHome";
             linkHome.Size = new Size(66, 22);
             linkHome.TabIndex = 2;
@@ -91,7 +91,7 @@
             linkAbo.AutoSize = true;
             linkAbo.BackColor = Color.FromArgb(217, 46, 24);
             linkAbo.Font = new Font("Monocraft", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            linkAbo.Location = new Point(819, 28);
+            linkAbo.Location = new Point(856, 28);
             linkAbo.Name = "linkAbo";
             linkAbo.Size = new Size(52, 22);
             linkAbo.TabIndex = 3;
@@ -102,7 +102,7 @@
             linkAnmeldung.AutoSize = true;
             linkAnmeldung.BackColor = Color.FromArgb(217, 46, 24);
             linkAnmeldung.Font = new Font("Monocraft", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            linkAnmeldung.Location = new Point(887, 28);
+            linkAnmeldung.Location = new Point(924, 28);
             linkAnmeldung.Name = "linkAnmeldung";
             linkAnmeldung.Size = new Size(136, 22);
             linkAnmeldung.TabIndex = 4;
@@ -113,7 +113,7 @@
             label2.AutoSize = true;
             label2.BackColor = Color.FromArgb(217, 46, 24);
             label2.Font = new Font("Monocraft", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(798, 28);
+            label2.Location = new Point(835, 28);
             label2.Name = "label2";
             label2.Size = new Size(94, 22);
             label2.TabIndex = 5;
@@ -126,10 +126,20 @@
             panelMuki.Controls.Add(pictureBox2);
             panelMuki.Controls.Add(label4);
             panelMuki.Controls.Add(label3);
-            panelMuki.Location = new Point(12, 93);
+            panelMuki.Location = new Point(26, 93);
             panelMuki.Name = "panelMuki";
             panelMuki.Size = new Size(500, 250);
             panelMuki.TabIndex = 6;
+            // 
+            // buttonMuki
+            // 
+            buttonMuki.Location = new Point(3, 3);
+            buttonMuki.Name = "buttonMuki";
+            buttonMuki.Size = new Size(494, 244);
+            buttonMuki.TabIndex = 7;
+            buttonMuki.Text = "Mukibude";
+            buttonMuki.UseVisualStyleBackColor = true;
+            buttonMuki.Click += buttonMuki_Click;
             // 
             // pictureBox2
             // 
@@ -160,30 +170,22 @@
             label3.TabIndex = 8;
             label3.Text = "Mukibude";
             // 
-            // buttonMuki
-            // 
-            buttonMuki.Location = new Point(3, 3);
-            buttonMuki.Name = "buttonMuki";
-            buttonMuki.Size = new Size(494, 244);
-            buttonMuki.TabIndex = 7;
-            buttonMuki.Text = "Mukibude";
-            buttonMuki.UseVisualStyleBackColor = true;
-            buttonMuki.Click += buttonMuki_Click;
-            // 
             // buttonSauna
             // 
+            buttonSauna.BackColor = Color.White;
             buttonSauna.Location = new Point(3, 3);
             buttonSauna.Name = "buttonSauna";
             buttonSauna.Size = new Size(494, 244);
             buttonSauna.TabIndex = 7;
             buttonSauna.Text = "Sauna";
-            buttonSauna.UseVisualStyleBackColor = true;
+            buttonSauna.UseVisualStyleBackColor = false;
             buttonSauna.Click += buttonSauna_Click;
             // 
             // panelSauna
             // 
+            panelSauna.BackColor = Color.FromArgb(255, 192, 192);
             panelSauna.Controls.Add(buttonSauna);
-            panelSauna.Location = new Point(518, 93);
+            panelSauna.Location = new Point(543, 93);
             panelSauna.Name = "panelSauna";
             panelSauna.Size = new Size(500, 250);
             panelSauna.TabIndex = 8;
@@ -196,11 +198,13 @@
             buttonCardio.TabIndex = 7;
             buttonCardio.Text = "Cardio";
             buttonCardio.UseVisualStyleBackColor = true;
+            buttonCardio.Click += buttonCardio_Click;
             // 
             // panelCardio
             // 
+            panelCardio.BackColor = SystemColors.ActiveCaption;
             panelCardio.Controls.Add(buttonCardio);
-            panelCardio.Location = new Point(12, 352);
+            panelCardio.Location = new Point(26, 352);
             panelCardio.Name = "panelCardio";
             panelCardio.Size = new Size(500, 250);
             panelCardio.TabIndex = 8;
@@ -213,11 +217,13 @@
             buttonWasser.TabIndex = 7;
             buttonWasser.Text = "Wasser";
             buttonWasser.UseVisualStyleBackColor = true;
+            buttonWasser.Click += buttonWasser_Click;
             // 
             // panelWasser
             // 
+            panelWasser.BackColor = SystemColors.ActiveBorder;
             panelWasser.Controls.Add(buttonWasser);
-            panelWasser.Location = new Point(518, 352);
+            panelWasser.Location = new Point(543, 352);
             panelWasser.Name = "panelWasser";
             panelWasser.Size = new Size(500, 250);
             panelWasser.TabIndex = 8;
@@ -226,7 +232,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1032, 633);
+            ClientSize = new Size(1066, 633);
             Controls.Add(panelWasser);
             Controls.Add(panelCardio);
             Controls.Add(panelSauna);
