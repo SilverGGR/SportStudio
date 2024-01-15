@@ -52,5 +52,10 @@ namespace SportStudio
         {
             changePanel(panelWasser, buttonWasser, new Point(543, 352), "Wasser");
         }
+
+        private void linkAbo_Click(object sender, EventArgs e)
+        {
+            new AboScreen().ShowDialog();
+        }
     }
 }

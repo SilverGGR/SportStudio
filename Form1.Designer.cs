@@ -96,6 +96,7 @@
             linkAbo.Size = new Size(52, 22);
             linkAbo.TabIndex = 3;
             linkAbo.Text = "Abo";
+            linkAbo.Click += linkAbo_Click;
             // 
             // linkAnmeldung
             // 
@@ -154,11 +155,12 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(3, 47);
+            label4.Font = new Font("Segoe UI", 4.20000029F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Location = new Point(3, 40);
             label4.Name = "label4";
-            label4.Size = new Size(163, 100);
+            label4.Size = new Size(268, 242);
             label4.TabIndex = 9;
-            label4.Text = "Größ\r\nAnzahl der Sportgeräte\r\nMuskelgruppen\r\nCoaches\r\nPreis\r\n";
+            label4.Text = resources.GetString("label4.Text");
             // 
             // label3
             // 
