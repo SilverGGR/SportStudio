@@ -34,7 +34,6 @@
             linkAnmeldung = new Label();
             pictureBox1 = new PictureBox();
             label2 = new Label();
-            label3 = new Label();
             label4 = new Label();
             checkBoxMuki = new CheckBox();
             checkBoxSauna = new CheckBox();
@@ -57,11 +56,11 @@
             // 
             linkAbo.AutoSize = true;
             linkAbo.BackColor = Color.FromArgb(217, 46, 24);
-            linkAbo.Font = new Font("Monocraft", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            linkAbo.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
             linkAbo.ForeColor = Color.SpringGreen;
-            linkAbo.Location = new Point(845, 24);
+            linkAbo.Location = new Point(899, 24);
             linkAbo.Name = "linkAbo";
-            linkAbo.Size = new Size(52, 22);
+            linkAbo.Size = new Size(51, 25);
             linkAbo.TabIndex = 8;
             linkAbo.Text = "Abo";
             // 
@@ -69,10 +68,10 @@
             // 
             label1.AutoSize = true;
             label1.BackColor = Color.FromArgb(217, 46, 24);
-            label1.Font = new Font("Monocraft", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(369, 9);
+            label1.Font = new Font("Microsoft Sans Serif", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(413, 7);
             label1.Name = "label1";
-            label1.Size = new Size(330, 41);
+            label1.Size = new Size(242, 42);
             label1.TabIndex = 6;
             label1.Text = "Sport und so";
             // 
@@ -80,10 +79,10 @@
             // 
             linkHome.AutoSize = true;
             linkHome.BackColor = Color.FromArgb(217, 46, 24);
-            linkHome.Font = new Font("Monocraft", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            linkHome.Location = new Point(763, 24);
+            linkHome.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            linkHome.Location = new Point(825, 24);
             linkHome.Name = "linkHome";
-            linkHome.Size = new Size(66, 22);
+            linkHome.Size = new Size(68, 25);
             linkHome.TabIndex = 7;
             linkHome.Text = "Home";
             // 
@@ -91,10 +90,10 @@
             // 
             linkAnmeldung.AutoSize = true;
             linkAnmeldung.BackColor = Color.FromArgb(217, 46, 24);
-            linkAnmeldung.Font = new Font("Monocraft", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            linkAnmeldung.Location = new Point(913, 24);
+            linkAnmeldung.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            linkAnmeldung.Location = new Point(956, 24);
             linkAnmeldung.Name = "linkAnmeldung";
-            linkAnmeldung.Size = new Size(136, 22);
+            linkAnmeldung.Size = new Size(121, 25);
             linkAnmeldung.TabIndex = 9;
             linkAnmeldung.Text = "Anmeldung";
             // 
@@ -112,41 +111,30 @@
             // 
             label2.AutoSize = true;
             label2.BackColor = Color.FromArgb(217, 46, 24);
-            label2.Font = new Font("Monocraft", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label2.Location = new Point(823, 24);
             label2.Name = "label2";
-            label2.Size = new Size(94, 22);
+            label2.Size = new Size(48, 25);
             label2.TabIndex = 10;
             label2.Text = "|    |";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.FromArgb(217, 46, 24);
-            label3.Font = new Font("Monocraft", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(823, 24);
-            label3.Name = "label3";
-            label3.Size = new Size(94, 22);
-            label3.TabIndex = 11;
-            label3.Text = "|    |";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Monocraft", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             label4.Location = new Point(12, 117);
             label4.Name = "label4";
-            label4.Size = new Size(907, 31);
+            label4.Size = new Size(665, 32);
             label4.TabIndex = 12;
             label4.Text = "Stellen sie sich hier ihr eigenes Abo zusammen!\r\n";
             // 
             // checkBoxMuki
             // 
             checkBoxMuki.AutoSize = true;
-            checkBoxMuki.Font = new Font("Monocraft", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            checkBoxMuki.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             checkBoxMuki.Location = new Point(12, 205);
             checkBoxMuki.Name = "checkBoxMuki";
-            checkBoxMuki.Size = new Size(188, 35);
+            checkBoxMuki.Size = new Size(168, 36);
             checkBoxMuki.TabIndex = 13;
             checkBoxMuki.Text = "Mukibude";
             checkBoxMuki.UseVisualStyleBackColor = true;
@@ -155,10 +143,10 @@
             // checkBoxSauna
             // 
             checkBoxSauna.AutoSize = true;
-            checkBoxSauna.Font = new Font("Monocraft", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            checkBoxSauna.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             checkBoxSauna.Location = new Point(12, 246);
             checkBoxSauna.Name = "checkBoxSauna";
-            checkBoxSauna.Size = new Size(131, 35);
+            checkBoxSauna.Size = new Size(124, 36);
             checkBoxSauna.TabIndex = 14;
             checkBoxSauna.Text = "Sauna";
             checkBoxSauna.UseVisualStyleBackColor = true;
@@ -167,10 +155,10 @@
             // checkBoxCardio
             // 
             checkBoxCardio.AutoSize = true;
-            checkBoxCardio.Font = new Font("Monocraft", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            checkBoxCardio.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             checkBoxCardio.Location = new Point(12, 287);
             checkBoxCardio.Name = "checkBoxCardio";
-            checkBoxCardio.Size = new Size(150, 35);
+            checkBoxCardio.Size = new Size(126, 36);
             checkBoxCardio.TabIndex = 15;
             checkBoxCardio.Text = "Cardio";
             checkBoxCardio.UseVisualStyleBackColor = true;
@@ -179,10 +167,10 @@
             // checkBoxWasser
             // 
             checkBoxWasser.AutoSize = true;
-            checkBoxWasser.Font = new Font("Monocraft", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            checkBoxWasser.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             checkBoxWasser.Location = new Point(12, 328);
             checkBoxWasser.Name = "checkBoxWasser";
-            checkBoxWasser.Size = new Size(150, 35);
+            checkBoxWasser.Size = new Size(137, 36);
             checkBoxWasser.TabIndex = 16;
             checkBoxWasser.Text = "Wasser";
             checkBoxWasser.UseVisualStyleBackColor = true;
@@ -191,56 +179,56 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Font = new Font("Monocraft", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             label5.Location = new Point(206, 206);
             label5.Name = "label5";
-            label5.Size = new Size(71, 31);
+            label5.Size = new Size(65, 32);
             label5.TabIndex = 17;
             label5.Text = "10€";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new Font("Monocraft", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             label6.Location = new Point(206, 247);
             label6.Name = "label6";
-            label6.Size = new Size(71, 31);
+            label6.Size = new Size(65, 32);
             label6.TabIndex = 18;
             label6.Text = "05€";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Font = new Font("Monocraft", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             label7.Location = new Point(206, 288);
             label7.Name = "label7";
-            label7.Size = new Size(71, 31);
+            label7.Size = new Size(65, 32);
             label7.TabIndex = 19;
             label7.Text = "08€";
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Font = new Font("Monocraft", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             label8.Location = new Point(206, 329);
             label8.Name = "label8";
-            label8.Size = new Size(71, 31);
+            label8.Size = new Size(65, 32);
             label8.TabIndex = 20;
             label8.Text = "12€";
             // 
             // gesamtPreis
             // 
             gesamtPreis.AutoSize = true;
-            gesamtPreis.Font = new Font("Monocraft", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            gesamtPreis.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             gesamtPreis.Location = new Point(549, 439);
             gesamtPreis.Name = "gesamtPreis";
-            gesamtPreis.Size = new Size(52, 31);
+            gesamtPreis.Size = new Size(48, 32);
             gesamtPreis.TabIndex = 21;
             gesamtPreis.Text = "00";
             // 
             // buttonBuchen
             // 
-            buttonBuchen.Font = new Font("Monocraft", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonBuchen.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             buttonBuchen.Location = new Point(12, 433);
             buttonBuchen.Name = "buttonBuchen";
             buttonBuchen.Size = new Size(269, 45);
@@ -251,42 +239,42 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.Font = new Font("Monocraft", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label10.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             label10.Location = new Point(301, 439);
             label10.Name = "label10";
-            label10.Size = new Size(242, 31);
+            label10.Size = new Size(195, 32);
             label10.TabIndex = 23;
             label10.Text = "Gesamtpreis:";
             // 
             // button1
             // 
-            button1.Font = new Font("Monocraft", 19.7999973F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.Font = new Font("Microsoft Sans Serif", 19.7999973F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = Color.Red;
-            button1.Location = new Point(473, 192);
+            button1.Location = new Point(473, 205);
             button1.Name = "button1";
             button1.Size = new Size(412, 134);
             button1.TabIndex = 24;
-            button1.Text = "! Abo-Bundle !";
+            button1.Text = "Abo-Bundle";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
             // label11
             // 
             label11.AutoSize = true;
-            label11.Font = new Font("Monocraft", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label11.Location = new Point(413, 342);
+            label11.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label11.Location = new Point(473, 354);
             label11.Name = "label11";
-            label11.Size = new Size(542, 22);
+            label11.Size = new Size(386, 25);
             label11.TabIndex = 25;
             label11.Text = "Kaufe jetzt das Abo-Bundle für nur 30€";
             // 
             // label9
             // 
             label9.AutoSize = true;
-            label9.Font = new Font("Monocraft", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label9.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             label9.Location = new Point(590, 439);
             label9.Name = "label9";
-            label9.Size = new Size(33, 31);
+            label9.Size = new Size(31, 32);
             label9.TabIndex = 26;
             label9.Text = "€";
             // 
@@ -311,7 +299,6 @@
             Controls.Add(checkBoxMuki);
             Controls.Add(label4);
             Controls.Add(linkAbo);
-            Controls.Add(label3);
             Controls.Add(label1);
             Controls.Add(linkHome);
             Controls.Add(linkAnmeldung);

@@ -9,6 +9,7 @@ namespace SportStudio
             InitializeComponent();
         }
 
+
         private void changePanel(Panel changingPanel, Button changingButton, Point originalLocation, string changingText)
         {
             float bigScaleFactor = 2.1f;

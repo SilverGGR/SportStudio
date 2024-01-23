@@ -34,7 +34,6 @@
             linkHome = new Label();
             linkAbo = new Label();
             linkAnmeldung = new Label();
-            label2 = new Label();
             panelMuki = new Panel();
             buttonMuki = new Button();
             pictureBox2 = new PictureBox();
@@ -68,10 +67,10 @@
             // 
             label1.AutoSize = true;
             label1.BackColor = Color.FromArgb(217, 46, 24);
-            label1.Font = new Font("Monocraft", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Font = new Font("Microsoft Sans Serif", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
             label1.Location = new Point(368, 9);
             label1.Name = "label1";
-            label1.Size = new Size(330, 41);
+            label1.Size = new Size(242, 42);
             label1.TabIndex = 1;
             label1.Text = "Sport und so";
             // 
@@ -79,10 +78,10 @@
             // 
             linkHome.AutoSize = true;
             linkHome.BackColor = Color.FromArgb(217, 46, 24);
-            linkHome.Font = new Font("Monocraft", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            linkHome.Location = new Point(774, 28);
+            linkHome.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            linkHome.Location = new Point(793, 28);
             linkHome.Name = "linkHome";
-            linkHome.Size = new Size(66, 22);
+            linkHome.Size = new Size(68, 25);
             linkHome.TabIndex = 2;
             linkHome.Text = "Home";
             // 
@@ -90,10 +89,10 @@
             // 
             linkAbo.AutoSize = true;
             linkAbo.BackColor = Color.FromArgb(217, 46, 24);
-            linkAbo.Font = new Font("Monocraft", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            linkAbo.Location = new Point(856, 28);
+            linkAbo.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            linkAbo.Location = new Point(867, 28);
             linkAbo.Name = "linkAbo";
-            linkAbo.Size = new Size(52, 22);
+            linkAbo.Size = new Size(51, 25);
             linkAbo.TabIndex = 3;
             linkAbo.Text = "Abo";
             linkAbo.Click += linkAbo_Click;
@@ -102,23 +101,12 @@
             // 
             linkAnmeldung.AutoSize = true;
             linkAnmeldung.BackColor = Color.FromArgb(217, 46, 24);
-            linkAnmeldung.Font = new Font("Monocraft", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            linkAnmeldung.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
             linkAnmeldung.Location = new Point(924, 28);
             linkAnmeldung.Name = "linkAnmeldung";
-            linkAnmeldung.Size = new Size(136, 22);
+            linkAnmeldung.Size = new Size(121, 25);
             linkAnmeldung.TabIndex = 4;
             linkAnmeldung.Text = "Anmeldung";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.FromArgb(217, 46, 24);
-            label2.Font = new Font("Monocraft", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(835, 28);
-            label2.Name = "label2";
-            label2.Size = new Size(94, 22);
-            label2.TabIndex = 5;
-            label2.Text = "|    |";
             // 
             // panelMuki
             // 
@@ -134,6 +122,8 @@
             // 
             // buttonMuki
             // 
+            buttonMuki.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonMuki.Image = (Image)resources.GetObject("buttonMuki.Image");
             buttonMuki.Location = new Point(3, 3);
             buttonMuki.Name = "buttonMuki";
             buttonMuki.Size = new Size(494, 244);
@@ -165,16 +155,18 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Monocraft", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             label3.Location = new Point(72, 14);
             label3.Name = "label3";
-            label3.Size = new Size(140, 26);
+            label3.Size = new Size(127, 29);
             label3.TabIndex = 8;
             label3.Text = "Mukibude";
             // 
             // buttonSauna
             // 
-            buttonSauna.BackColor = Color.White;
+            buttonSauna.BackColor = Color.Transparent;
+            buttonSauna.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonSauna.Image = (Image)resources.GetObject("buttonSauna.Image");
             buttonSauna.Location = new Point(3, 3);
             buttonSauna.Name = "buttonSauna";
             buttonSauna.Size = new Size(494, 244);
@@ -194,6 +186,8 @@
             // 
             // buttonCardio
             // 
+            buttonCardio.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonCardio.Image = (Image)resources.GetObject("buttonCardio.Image");
             buttonCardio.Location = new Point(3, 3);
             buttonCardio.Name = "buttonCardio";
             buttonCardio.Size = new Size(494, 244);
@@ -213,6 +207,8 @@
             // 
             // buttonWasser
             // 
+            buttonWasser.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonWasser.Image = (Image)resources.GetObject("buttonWasser.Image");
             buttonWasser.Location = new Point(3, 3);
             buttonWasser.Name = "buttonWasser";
             buttonWasser.Size = new Size(494, 244);
@@ -241,7 +237,6 @@
             Controls.Add(panelMuki);
             Controls.Add(linkAbo);
             Controls.Add(label1);
-            Controls.Add(label2);
             Controls.Add(linkHome);
             Controls.Add(linkAnmeldung);
             Controls.Add(pictureBox1);
@@ -265,7 +260,6 @@
         private Label linkHome;
         private Label linkAbo;
         private Label linkAnmeldung;
-        private Label label2;
         private Panel panelMuki;
         private Button buttonMuki;
         private Button buttonSauna;
