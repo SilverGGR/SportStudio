@@ -35,10 +35,10 @@
             linkAbo = new Label();
             linkAnmeldung = new Label();
             panelMuki = new Panel();
-            buttonMuki = new Button();
             pictureBox2 = new PictureBox();
             label4 = new Label();
             label3 = new Label();
+            buttonMuki = new Button();
             buttonSauna = new Button();
             panelSauna = new Panel();
             buttonCardio = new Button();
@@ -110,34 +110,21 @@
             // 
             // panelMuki
             // 
-            panelMuki.BackColor = Color.FromArgb(255, 192, 192);
             panelMuki.Controls.Add(buttonMuki);
-            panelMuki.Controls.Add(pictureBox2);
             panelMuki.Controls.Add(label4);
             panelMuki.Controls.Add(label3);
+            panelMuki.Controls.Add(pictureBox2);
             panelMuki.Location = new Point(26, 93);
             panelMuki.Name = "panelMuki";
             panelMuki.Size = new Size(500, 250);
             panelMuki.TabIndex = 6;
             // 
-            // buttonMuki
-            // 
-            buttonMuki.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point);
-            buttonMuki.Image = (Image)resources.GetObject("buttonMuki.Image");
-            buttonMuki.Location = new Point(3, 3);
-            buttonMuki.Name = "buttonMuki";
-            buttonMuki.Size = new Size(494, 244);
-            buttonMuki.TabIndex = 7;
-            buttonMuki.Text = "Mukibude";
-            buttonMuki.UseVisualStyleBackColor = true;
-            buttonMuki.Click += buttonMuki_Click;
-            // 
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(276, 3);
+            pictureBox2.Location = new Point(3, 3);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(221, 244);
+            pictureBox2.Size = new Size(494, 244);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 8;
             pictureBox2.TabStop = false;
@@ -145,6 +132,7 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI", 4.20000029F, FontStyle.Regular, GraphicsUnit.Point);
             label4.Location = new Point(3, 40);
             label4.Name = "label4";
@@ -155,12 +143,25 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
             label3.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             label3.Location = new Point(72, 14);
             label3.Name = "label3";
             label3.Size = new Size(127, 29);
             label3.TabIndex = 8;
             label3.Text = "Mukibude";
+            // 
+            // buttonMuki
+            // 
+            buttonMuki.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonMuki.Image = (Image)resources.GetObject("buttonMuki.Image");
+            buttonMuki.Location = new Point(17, 204);
+            buttonMuki.Name = "buttonMuki";
+            buttonMuki.Size = new Size(494, 244);
+            buttonMuki.TabIndex = 7;
+            buttonMuki.Text = "Mukibude";
+            buttonMuki.UseVisualStyleBackColor = true;
+            buttonMuki.Click += buttonMuki_Click;
             // 
             // buttonSauna
             // 
