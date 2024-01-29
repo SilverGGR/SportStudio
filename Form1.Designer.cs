@@ -58,9 +58,8 @@
             pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox1.BackColor = Color.FromArgb(217, 46, 24);
             pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(932, 46);
+            pictureBox1.Size = new Size(1065, 61);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
@@ -69,9 +68,9 @@
             label1.AutoSize = true;
             label1.BackColor = Color.FromArgb(217, 46, 24);
             label1.Font = new Font("Microsoft Sans Serif", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(322, 7);
+            label1.Location = new Point(368, 9);
             label1.Name = "label1";
-            label1.Size = new Size(198, 36);
+            label1.Size = new Size(242, 42);
             label1.TabIndex = 1;
             label1.Text = "Sport und so";
             // 
@@ -80,9 +79,9 @@
             linkHome.AutoSize = true;
             linkHome.BackColor = Color.FromArgb(217, 46, 24);
             linkHome.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            linkHome.Location = new Point(694, 21);
+            linkHome.Location = new Point(793, 28);
             linkHome.Name = "linkHome";
-            linkHome.Size = new Size(56, 20);
+            linkHome.Size = new Size(68, 25);
             linkHome.TabIndex = 2;
             linkHome.Text = "Home";
             // 
@@ -91,9 +90,9 @@
             linkAbo.AutoSize = true;
             linkAbo.BackColor = Color.FromArgb(217, 46, 24);
             linkAbo.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            linkAbo.Location = new Point(759, 21);
+            linkAbo.Location = new Point(867, 28);
             linkAbo.Name = "linkAbo";
-            linkAbo.Size = new Size(41, 20);
+            linkAbo.Size = new Size(51, 25);
             linkAbo.TabIndex = 3;
             linkAbo.Text = "Abo";
             linkAbo.Click += linkAbo_Click;
@@ -103,9 +102,9 @@
             linkAnmeldung.AutoSize = true;
             linkAnmeldung.BackColor = Color.FromArgb(217, 46, 24);
             linkAnmeldung.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            linkAnmeldung.Location = new Point(808, 21);
+            linkAnmeldung.Location = new Point(923, 28);
             linkAnmeldung.Name = "linkAnmeldung";
-            linkAnmeldung.Size = new Size(99, 20);
+            linkAnmeldung.Size = new Size(121, 25);
             linkAnmeldung.TabIndex = 4;
             linkAnmeldung.Text = "Anmeldung";
             // 
@@ -115,22 +114,20 @@
             panelMuki.Controls.Add(label4);
             panelMuki.Controls.Add(label3);
             panelMuki.Controls.Add(pictureBox2);
-            panelMuki.Location = new Point(23, 70);
-            panelMuki.Margin = new Padding(3, 2, 3, 2);
+            panelMuki.Location = new Point(26, 93);
             panelMuki.Name = "panelMuki";
-            panelMuki.Size = new Size(438, 188);
+            panelMuki.Size = new Size(501, 251);
             panelMuki.TabIndex = 6;
             // 
             // buttonMuki
             // 
             buttonMuki.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            buttonMuki.BackgroundImage = Properties.Resources.mukiBild1;
+            buttonMuki.BackgroundImage = Properties.Resources.mukiBild;
             buttonMuki.BackgroundImageLayout = ImageLayout.Zoom;
             buttonMuki.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point);
-            buttonMuki.Location = new Point(3, 3);
-            buttonMuki.Margin = new Padding(3, 2, 3, 2);
+            buttonMuki.Location = new Point(3, 4);
             buttonMuki.Name = "buttonMuki";
-            buttonMuki.Size = new Size(432, 183);
+            buttonMuki.Size = new Size(494, 244);
             buttonMuki.TabIndex = 7;
             buttonMuki.Text = "Mukibude";
             buttonMuki.UseVisualStyleBackColor = true;
@@ -141,9 +138,9 @@
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI", 4.20000029F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(3, 30);
+            label4.Location = new Point(3, 40);
             label4.Name = "label4";
-            label4.Size = new Size(200, 176);
+            label4.Size = new Size(268, 242);
             label4.TabIndex = 9;
             label4.Text = resources.GetString("label4.Text");
             // 
@@ -152,19 +149,18 @@
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(63, 10);
+            label3.Location = new Point(72, 13);
             label3.Name = "label3";
-            label3.Size = new Size(102, 24);
+            label3.Size = new Size(127, 29);
             label3.TabIndex = 8;
             label3.Text = "Mukibude";
             // 
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(3, 2);
-            pictureBox2.Margin = new Padding(3, 2, 3, 2);
+            pictureBox2.Location = new Point(3, 3);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(432, 183);
+            pictureBox2.Size = new Size(494, 244);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 8;
             pictureBox2.TabStop = false;
@@ -172,12 +168,12 @@
             // buttonSauna
             // 
             buttonSauna.BackColor = Color.Transparent;
+            buttonSauna.BackgroundImage = Properties.Resources.sauna1;
+            buttonSauna.BackgroundImageLayout = ImageLayout.Zoom;
             buttonSauna.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point);
-            buttonSauna.Image = (Image)resources.GetObject("buttonSauna.Image");
-            buttonSauna.Location = new Point(3, 2);
-            buttonSauna.Margin = new Padding(3, 2, 3, 2);
+            buttonSauna.Location = new Point(3, 3);
             buttonSauna.Name = "buttonSauna";
-            buttonSauna.Size = new Size(432, 183);
+            buttonSauna.Size = new Size(494, 244);
             buttonSauna.TabIndex = 7;
             buttonSauna.Text = "Sauna";
             buttonSauna.UseVisualStyleBackColor = false;
@@ -187,20 +183,19 @@
             // 
             panelSauna.BackColor = Color.FromArgb(255, 192, 192);
             panelSauna.Controls.Add(buttonSauna);
-            panelSauna.Location = new Point(475, 70);
-            panelSauna.Margin = new Padding(3, 2, 3, 2);
+            panelSauna.Location = new Point(543, 93);
             panelSauna.Name = "panelSauna";
-            panelSauna.Size = new Size(438, 188);
+            panelSauna.Size = new Size(501, 251);
             panelSauna.TabIndex = 8;
             // 
             // buttonCardio
             // 
+            buttonCardio.BackgroundImage = Properties.Resources.cardio1;
+            buttonCardio.BackgroundImageLayout = ImageLayout.Zoom;
             buttonCardio.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point);
-            buttonCardio.Image = (Image)resources.GetObject("buttonCardio.Image");
-            buttonCardio.Location = new Point(3, 2);
-            buttonCardio.Margin = new Padding(3, 2, 3, 2);
+            buttonCardio.Location = new Point(3, 3);
             buttonCardio.Name = "buttonCardio";
-            buttonCardio.Size = new Size(432, 183);
+            buttonCardio.Size = new Size(494, 244);
             buttonCardio.TabIndex = 7;
             buttonCardio.Text = "Cardio";
             buttonCardio.UseVisualStyleBackColor = true;
@@ -210,10 +205,9 @@
             // 
             panelCardio.BackColor = SystemColors.ActiveCaption;
             panelCardio.Controls.Add(buttonCardio);
-            panelCardio.Location = new Point(23, 264);
-            panelCardio.Margin = new Padding(3, 2, 3, 2);
+            panelCardio.Location = new Point(26, 352);
             panelCardio.Name = "panelCardio";
-            panelCardio.Size = new Size(438, 188);
+            panelCardio.Size = new Size(501, 251);
             panelCardio.TabIndex = 8;
             // 
             // buttonWasser
@@ -221,10 +215,9 @@
             buttonWasser.BackgroundImage = Properties.Resources.wasserBild;
             buttonWasser.BackgroundImageLayout = ImageLayout.Zoom;
             buttonWasser.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point);
-            buttonWasser.Location = new Point(3, 2);
-            buttonWasser.Margin = new Padding(3, 2, 3, 2);
+            buttonWasser.Location = new Point(3, 3);
             buttonWasser.Name = "buttonWasser";
-            buttonWasser.Size = new Size(432, 183);
+            buttonWasser.Size = new Size(494, 244);
             buttonWasser.TabIndex = 7;
             buttonWasser.Text = "Wasser";
             buttonWasser.UseVisualStyleBackColor = true;
@@ -234,17 +227,16 @@
             // 
             panelWasser.BackColor = SystemColors.ActiveBorder;
             panelWasser.Controls.Add(buttonWasser);
-            panelWasser.Location = new Point(475, 264);
-            panelWasser.Margin = new Padding(3, 2, 3, 2);
+            panelWasser.Location = new Point(543, 352);
             panelWasser.Name = "panelWasser";
-            panelWasser.Size = new Size(438, 188);
+            panelWasser.Size = new Size(501, 251);
             panelWasser.TabIndex = 8;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(933, 475);
+            ClientSize = new Size(1066, 633);
             Controls.Add(panelWasser);
             Controls.Add(panelCardio);
             Controls.Add(panelSauna);
@@ -254,7 +246,6 @@
             Controls.Add(linkHome);
             Controls.Add(linkAnmeldung);
             Controls.Add(pictureBox1);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

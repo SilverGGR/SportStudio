@@ -63,6 +63,16 @@ namespace SportStudio.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cardio1 {
+            get {
+                object obj = ResourceManager.GetObject("cardio1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mukiBild {
             get {
                 object obj = ResourceManager.GetObject("mukiBild", resourceCulture);
@@ -76,6 +86,16 @@ namespace SportStudio.Properties {
         internal static System.Drawing.Bitmap mukiBild1 {
             get {
                 object obj = ResourceManager.GetObject("mukiBild1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sauna1 {
+            get {
+                object obj = ResourceManager.GetObject("sauna1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
