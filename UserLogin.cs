@@ -97,6 +97,7 @@ namespace SportStudio
                     if(user.IsAdmin)
                     {
                         Form1.adminMode = true;
+                        Form1.showLinkDataView();
                     } else
                     {
                         Form1.adminMode = false;

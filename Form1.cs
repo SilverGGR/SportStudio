@@ -24,6 +24,11 @@ namespace SportStudio
             }
         }
 
+        public void showLinkDataView()
+        {
+            linkDataView.Hide();
+        }
+
         private void buttonMuki_Click(object sender, EventArgs e)
         {
             panelMuki.Visible = true;
@@ -74,7 +79,7 @@ namespace SportStudio
             new UserLogin().ShowDialog();
         }
 
-        private void DataViewLabel_Click(object sender, EventArgs e)
+        private void linkDataView_Click(object sender, EventArgs e)
         {
             new DataView().ShowDialog();
         }

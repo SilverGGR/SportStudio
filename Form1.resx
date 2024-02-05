@@ -18,7 +18,7 @@
     <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
     <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
     <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
-    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing"">Blue</data>
     <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
         <value>[base64 mime encoded serialized .NET Framework object]</value>
     </data>
@@ -159,15 +159,15 @@ unnormal vielen Gewichten, die jeden Trainingswunsch erfüllen.</value>
   <data name="label27.Text" xml:space="preserve">
     <value>In unserem Wassersportreich steht Ihnen der talentierte Coach Marco Meeresbrise zur Seite. Als erfahrener Schwimmer und Aqua-Fitness-Enthusiast ist Marco Meeresbrise nicht nur ein Meister im Umgang mit dem Element Wasser, sondern auch ein Experte in der Aktivierung verschiedener Muskelgruppen. Sein inspirierendes Motto "Wassertraining für Körper und Seele" spornt Mitglieder an, die vielfältigen Möglichkeiten des Wassers zu entdecken und ihre individuellen Fitnessziele zu erreichen. Lassen Sie sich von Marco Meeresbrise leiten und tauchen Sie ein in eine Welt der erfrischenden Herausforderungen und muskulären Aktivierung.</value>
   </data>
-  <data name="label32.Text" xml:space="preserve">
-    <value>Unsere Wasserwelt erstreckt sich über großzügige 200 Quadratmeter, was etwa der Fläche von fünf Schwimmbecken entspricht. Hier erleben Sie eine facettenreiche Auswahl an Wasseraktivitäten, die jeden Bedarf abdecken. Egal, ob Sie entspannt Ihre Bahnen ziehen, mit Aqua-Fitness neue Maßstäbe setzen oder auf unseren Hydrobikes die Wellen bezwingen wollen – in unserer Wasserwelt findet jeder seine persönliche Herausforderung. Der Bereich bietet nicht nur eine angenehme Abkühlung, sondern auch die Möglichkeit, unterschiedliche Muskelgruppen zu aktivieren. Unser Wasserbereich ist ein Ort, an dem Herausforderung und Erfrischung Hand in Hand gehen, und Sie dazu einladen, in der Leichtigkeit des Wassers Ihre eigenen Grenzen zu überschreiten und neue Erfolge zu feiern.
-</value>
-  </data>
   <data name="label29.Text" xml:space="preserve">
     <value>In unserem Wasserbereich fördern Sie nicht nur Ihre Fitness, sondern stärken auch gezielt sämtliche Muskelgruppen. Die Vielfalt unserer Wassersportaktivitäten, wie Schwimmen, Aqua-Fitness und Wassergymnastik, ermöglicht ein gelenkschonendes, aber äußerst effektives Training. Während Sie durch das Wasser gleiten, werden Arm-, Schulter- und Rückenmuskulatur intensiv aktiviert. Der natürliche Widerstand des Wassers stellt sicher, dass Bein- und Rumpfmuskulatur effizient trainiert werden. Diese Aktivitäten bieten nicht nur eine angenehme Abkühlung, sondern sorgen auch dafür, dass jede Muskelpartie beansprucht und gestärkt wird.</value>
   </data>
   <data name="label30.Text" xml:space="preserve">
     <value>Die Mukibude ist stolz darauf, alle Mukis von A bis Z anzusprechen. Von den klassischen Bizeps und Trizeps bis zu den exotischeren Unterarm-Mukis und Waden-Mukisist hier für jeden Muskel etwas dabei. Sogar die vernachlässigten Pinky-Mukis werden nicht übersehen!
+</value>
+  </data>
+  <data name="label32.Text" xml:space="preserve">
+    <value>Unsere Wasserwelt erstreckt sich über großzügige 200 Quadratmeter, was etwa der Fläche von fünf Schwimmbecken entspricht. Hier erleben Sie eine facettenreiche Auswahl an Wasseraktivitäten, die jeden Bedarf abdecken. Egal, ob Sie entspannt Ihre Bahnen ziehen, mit Aqua-Fitness neue Maßstäbe setzen oder auf unseren Hydrobikes die Wellen bezwingen wollen – in unserer Wasserwelt findet jeder seine persönliche Herausforderung. Der Bereich bietet nicht nur eine angenehme Abkühlung, sondern auch die Möglichkeit, unterschiedliche Muskelgruppen zu aktivieren. Unser Wasserbereich ist ein Ort, an dem Herausforderung und Erfrischung Hand in Hand gehen, und Sie dazu einladen, in der Leichtigkeit des Wassers Ihre eigenen Grenzen zu überschreiten und neue Erfolge zu feiern.
 </value>
   </data>
 </root>
