@@ -8,12 +8,12 @@ namespace SportStudio
 {
     internal class Pool : Room
     {
-        private byte capacity { get; }
+        public byte Capacity { get; }
 
-        public Pool(string name, byte floor, double roomSize)
+        public Pool(byte floor, double roomSize)
             : base("Pool", floor, roomSize)
         {
-            capacity = 50;
+            Capacity = 50;
         }
     }
 }

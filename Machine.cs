@@ -2,20 +2,17 @@ namespace SportStudio
 {
     public class Machine
     {
-        private Guid id { get; }
-
-        private string name { get; set; }
-
-        private Room room { get; set; }
-
-        private string type { get; set; }
+        public Guid Id { get; }
+        public string Name { get; set; }
+        public Room Room { get; set; }
+        public string Type { get; set; }
 
         public Machine(string name, Room room, string type)
         {
-            this.id = Guid.NewGuid();
-            this.name = name;
-            this.room = room;
-            this.type = type;
+            this.Id = Guid.NewGuid();
+            this.Name = name;
+            this.Room = room;
+            this.Type = type;
         }
 
     }

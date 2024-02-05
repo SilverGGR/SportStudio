@@ -45,6 +45,7 @@
             panelCardio = new Panel();
             buttonWasser = new Button();
             panelWasser = new Panel();
+            DataViewLabel = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panelMuki.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -107,6 +108,7 @@
             linkAnmeldung.Size = new Size(121, 25);
             linkAnmeldung.TabIndex = 4;
             linkAnmeldung.Text = "Anmeldung";
+            linkAnmeldung.Click += linkAnmeldung_Click;
             // 
             // panelMuki
             // 
@@ -232,11 +234,24 @@
             panelWasser.Size = new Size(501, 251);
             panelWasser.TabIndex = 8;
             // 
+            // DataViewLabel
+            // 
+            DataViewLabel.AutoSize = true;
+            DataViewLabel.BackColor = Color.FromArgb(217, 46, 24);
+            DataViewLabel.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            DataViewLabel.Location = new Point(12, 28);
+            DataViewLabel.Name = "DataViewLabel";
+            DataViewLabel.Size = new Size(138, 25);
+            DataViewLabel.TabIndex = 9;
+            DataViewLabel.Text = "Datenansicht";
+            DataViewLabel.Click += DataViewLabel_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1066, 633);
+            Controls.Add(DataViewLabel);
             Controls.Add(panelWasser);
             Controls.Add(panelCardio);
             Controls.Add(panelSauna);
@@ -277,5 +292,6 @@
         private Label label4;
         private Label label3;
         private PictureBox pictureBox2;
+        private Label DataViewLabel;
     }
 }

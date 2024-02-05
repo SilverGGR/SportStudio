@@ -2,17 +2,17 @@
 {
     public class SportStudio
     {
-        public Guid id { get; }
+        public Guid Id { get; }
 
-        private string name { get; }
+        public string Name { get; }
 
-        private Address address { get; set; }
+        public Address Address { get; set; }
 
         public SportStudio(Address address)
         {
-            this.id = Guid.NewGuid();
-            this.name = "Sport und so";
-            this.address = address;
+            this.Id = Guid.NewGuid();
+            this.Name = "Sport und so";
+            this.Address = address;
         }
 
     }

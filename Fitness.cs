@@ -9,12 +9,12 @@ namespace SportStudio
     internal class Fitness : Room
     {
 
-        private Machine[] machines { get; set; }
+        public Machine[] Machines { get; set; }
 
-        public Fitness(string name, byte floor, double roomSize, Machine[] machines)
+        public Fitness(byte floor, double roomSize, Machine[] machines)
             : base("Fitness", floor, roomSize)
         {
-            this.machines = machines;
+            this.Machines = machines;
         }
     }
 }

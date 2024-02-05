@@ -2,33 +2,33 @@ namespace SportStudio
 {
     public class Membership
     {
-        private Guid id { get; }
-        private string[] modules { get; set; }
-        private double monthlyFee { get; set; }
-        private string startDate { get; set; }
-        private string endDate { get; set; }
+        public Guid Id { get; }
+        public string[] Modules { get; set; }
+        public double MonthlyFee { get; set; }
+        public string StartDate { get; set; }
+        public string EndDate { get; set; }
 
         public Membership(string[] modules, double monthlyFee, string startDate, string endDate)
         {
-            this.id = Guid.NewGuid();
-            this.modules = modules;
-            this.monthlyFee = monthlyFee;
-            this.startDate = startDate;
-            this.endDate = endDate;
+            this.Id = Guid.NewGuid();
+            this.Modules = modules;
+            this.MonthlyFee = monthlyFee;
+            this.StartDate = startDate;
+            this.EndDate = endDate;
         }
 
         public double calcMonthlyFee()
         {
-            if (modules.Contains("water"))
+            if (Modules.Contains("water"))
 
-                monthlyFee += 10;
+                MonthlyFee += 10;
             
-            if (modules.Contains("sauna"))
+            if (Modules.Contains("sauna"))
             {
-                monthlyFee += 10;
+                MonthlyFee += 10;
             }
 
-            return monthlyFee;
+            return MonthlyFee;
         }
 
     }

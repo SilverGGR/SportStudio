@@ -8,12 +8,12 @@ namespace SportStudio
 {
     internal class Cardio : Room
     {
-        private Machine[] machines { get; set; }
+        public Machine[] Machines { get; set; }
 
-        public Cardio(string name, byte floor, double roomSize, Machine[] machines)
+        public Cardio(byte floor, double roomSize, Machine[] machines)
             : base("Cardio", floor, roomSize)
         {
-            this.machines = machines;
+            this.Machines = machines;
         }
     }
 
