@@ -8,25 +8,30 @@ namespace SportStudio
     {
         public static bool adminMode = false;
         public static List<User> users = new List<User>();
-        Address address1 = new Address("Tomstraﬂe", 21, "Tomstadt", 11223);
+        public static User? activUser;
         User user1;
 
         public Form1()
         {
             InitializeComponent();
 
-            user1 = new User("Tom", "Lumpe", "tom@outlook.com", "tomspasswort", true, address1);
+            user1 = new User("Tom", "Lumpe", "tom@outlook.com", "tomspasswort", true, "Tomstraﬂe", 21, "Tomstadt", 11223);
             users.Add(user1);
-            MessageBox.Show(user1.FirstName);
-            foreach (User user in users)
-            {
-                MessageBox.Show($"Benutzer: {user.FirstName} {user.LastName}\nEmail: {user.EMail}\nStraﬂe: {user.Address.Street}\nHausnummer: {user.Address.StreetNumber}");
-            }
         }
 
+        public User? ActiveUser
+        {
+            get { return activUser; }
+            set { activUser = value; }
+        }
+
+        public List<User> UsersList
+        {
+            get { return users; }
+        }
         public void showLinkDataView()
         {
-            linkDataView.Hide();
+            linkDataView.Visible = false;
         }
 
         private void buttonMuki_Click(object sender, EventArgs e)
@@ -51,7 +56,14 @@ namespace SportStudio
 
         private void linkAbo_Click(object sender, EventArgs e)
         {
-            new AboScreen().ShowDialog();
+            if (activUser != null)
+            {
+                new AboScreen(this).ShowDialog();
+            }
+            else
+            {
+                new UserLogin(this).ShowDialog();
+            }
         }
 
         private void mukiBackButton_Click(object sender, EventArgs e)
@@ -76,12 +88,17 @@ namespace SportStudio
 
         private void linkAnmeldung_Click(object sender, EventArgs e)
         {
-            new UserLogin().ShowDialog();
+            new UserLogin(this).ShowDialog();
         }
 
         private void linkDataView_Click(object sender, EventArgs e)
         {
             new DataView().ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(activUser.UserMembership.MukiAbo.ToString());
         }
     }
 }

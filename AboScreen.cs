@@ -12,16 +12,18 @@ namespace SportStudio
 {
     public partial class AboScreen : Form
     {
-        public AboScreen()
+        private Form1 f1;
+        public AboScreen(Form1 f1)
         {
             InitializeComponent();
+            this.f1 = f1;
         }
 
         int gesamtpreis = 0;
 
         private void checkedAll()
         {
-            if (checkBoxMuki.Checked && checkBoxCardio.Checked && checkBoxSauna.Checked && checkBoxWasser.Checked)
+            if (checkBoxMuki.Checked && checkBoxCardio.Checked && checkBoxWellness.Checked && checkBoxWasser.Checked)
             {
                 gesamtPreis.Text = "30";
             }
@@ -43,7 +45,7 @@ namespace SportStudio
 
         private void checkBoxSauna_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBoxSauna.Checked)
+            if (checkBoxWellness.Checked)
             {
                 gesamtpreis += 5;
             }
@@ -87,10 +89,16 @@ namespace SportStudio
         {
             checkBoxMuki.Checked = true;
             checkBoxCardio.Checked = true;
-            checkBoxSauna.Checked = true;
+            checkBoxWellness.Checked = true;
             checkBoxWasser.Checked = true;
 
             gesamtPreis.Text = "30";
+        }
+
+        private void buttonBuchen_Click(object sender, EventArgs e)
+        {
+            Membership membership = new Membership(checkBoxMuki.Checked, checkBoxCardio.Checked, checkBoxWasser.Checked, checkBoxWellness.Checked, gesamtpreis);
+            f1.ActiveUser.UserMembership = membership;
         }
     }
 }

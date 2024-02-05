@@ -36,7 +36,7 @@
             label2 = new Label();
             label4 = new Label();
             checkBoxMuki = new CheckBox();
-            checkBoxSauna = new CheckBox();
+            checkBoxWellness = new CheckBox();
             checkBoxCardio = new CheckBox();
             checkBoxWasser = new CheckBox();
             label5 = new Label();
@@ -58,9 +58,9 @@
             linkAbo.BackColor = Color.FromArgb(217, 46, 24);
             linkAbo.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
             linkAbo.ForeColor = Color.SpringGreen;
-            linkAbo.Location = new Point(899, 24);
+            linkAbo.Location = new Point(787, 18);
             linkAbo.Name = "linkAbo";
-            linkAbo.Size = new Size(51, 25);
+            linkAbo.Size = new Size(41, 20);
             linkAbo.TabIndex = 8;
             linkAbo.Text = "Abo";
             // 
@@ -69,9 +69,9 @@
             label1.AutoSize = true;
             label1.BackColor = Color.FromArgb(217, 46, 24);
             label1.Font = new Font("Microsoft Sans Serif", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(413, 7);
+            label1.Location = new Point(361, 5);
             label1.Name = "label1";
-            label1.Size = new Size(242, 42);
+            label1.Size = new Size(198, 36);
             label1.TabIndex = 6;
             label1.Text = "Sport und so";
             // 
@@ -80,9 +80,9 @@
             linkHome.AutoSize = true;
             linkHome.BackColor = Color.FromArgb(217, 46, 24);
             linkHome.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            linkHome.Location = new Point(825, 24);
+            linkHome.Location = new Point(722, 18);
             linkHome.Name = "linkHome";
-            linkHome.Size = new Size(68, 25);
+            linkHome.Size = new Size(56, 20);
             linkHome.TabIndex = 7;
             linkHome.Text = "Home";
             // 
@@ -91,9 +91,9 @@
             linkAnmeldung.AutoSize = true;
             linkAnmeldung.BackColor = Color.FromArgb(217, 46, 24);
             linkAnmeldung.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            linkAnmeldung.Location = new Point(956, 24);
+            linkAnmeldung.Location = new Point(836, 18);
             linkAnmeldung.Name = "linkAnmeldung";
-            linkAnmeldung.Size = new Size(121, 25);
+            linkAnmeldung.Size = new Size(99, 20);
             linkAnmeldung.TabIndex = 9;
             linkAnmeldung.Text = "Anmeldung";
             // 
@@ -101,9 +101,10 @@
             // 
             pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox1.BackColor = Color.FromArgb(217, 46, 24);
-            pictureBox1.Location = new Point(-14, -5);
+            pictureBox1.Location = new Point(-12, -4);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1110, 62);
+            pictureBox1.Size = new Size(971, 46);
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
             // 
@@ -112,9 +113,9 @@
             label2.AutoSize = true;
             label2.BackColor = Color.FromArgb(217, 46, 24);
             label2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(823, 24);
+            label2.Location = new Point(720, 18);
             label2.Name = "label2";
-            label2.Size = new Size(48, 25);
+            label2.Size = new Size(41, 20);
             label2.TabIndex = 10;
             label2.Text = "|    |";
             // 
@@ -122,9 +123,9 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(12, 117);
+            label4.Location = new Point(10, 88);
             label4.Name = "label4";
-            label4.Size = new Size(665, 32);
+            label4.Size = new Size(524, 26);
             label4.TabIndex = 12;
             label4.Text = "Stellen sie sich hier ihr eigenes Abo zusammen!\r\n";
             // 
@@ -132,33 +133,36 @@
             // 
             checkBoxMuki.AutoSize = true;
             checkBoxMuki.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            checkBoxMuki.Location = new Point(12, 205);
+            checkBoxMuki.Location = new Point(10, 153);
+            checkBoxMuki.Margin = new Padding(3, 2, 3, 2);
             checkBoxMuki.Name = "checkBoxMuki";
-            checkBoxMuki.Size = new Size(168, 36);
+            checkBoxMuki.Size = new Size(133, 30);
             checkBoxMuki.TabIndex = 13;
             checkBoxMuki.Text = "Mukibude";
             checkBoxMuki.UseVisualStyleBackColor = true;
             checkBoxMuki.CheckedChanged += checkBoxMuki_CheckedChanged;
             // 
-            // checkBoxSauna
+            // checkBoxWellness
             // 
-            checkBoxSauna.AutoSize = true;
-            checkBoxSauna.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            checkBoxSauna.Location = new Point(12, 246);
-            checkBoxSauna.Name = "checkBoxSauna";
-            checkBoxSauna.Size = new Size(124, 36);
-            checkBoxSauna.TabIndex = 14;
-            checkBoxSauna.Text = "Sauna";
-            checkBoxSauna.UseVisualStyleBackColor = true;
-            checkBoxSauna.CheckedChanged += checkBoxSauna_CheckedChanged;
+            checkBoxWellness.AutoSize = true;
+            checkBoxWellness.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            checkBoxWellness.Location = new Point(10, 243);
+            checkBoxWellness.Margin = new Padding(3, 2, 3, 2);
+            checkBoxWellness.Name = "checkBoxWellness";
+            checkBoxWellness.Size = new Size(179, 30);
+            checkBoxWellness.TabIndex = 14;
+            checkBoxWellness.Text = "Wellnessoase";
+            checkBoxWellness.UseVisualStyleBackColor = true;
+            checkBoxWellness.CheckedChanged += checkBoxSauna_CheckedChanged;
             // 
             // checkBoxCardio
             // 
             checkBoxCardio.AutoSize = true;
             checkBoxCardio.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            checkBoxCardio.Location = new Point(12, 287);
+            checkBoxCardio.Location = new Point(10, 184);
+            checkBoxCardio.Margin = new Padding(3, 2, 3, 2);
             checkBoxCardio.Name = "checkBoxCardio";
-            checkBoxCardio.Size = new Size(126, 36);
+            checkBoxCardio.Size = new Size(101, 30);
             checkBoxCardio.TabIndex = 15;
             checkBoxCardio.Text = "Cardio";
             checkBoxCardio.UseVisualStyleBackColor = true;
@@ -168,9 +172,10 @@
             // 
             checkBoxWasser.AutoSize = true;
             checkBoxWasser.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            checkBoxWasser.Location = new Point(12, 328);
+            checkBoxWasser.Location = new Point(10, 215);
+            checkBoxWasser.Margin = new Padding(3, 2, 3, 2);
             checkBoxWasser.Name = "checkBoxWasser";
-            checkBoxWasser.Size = new Size(137, 36);
+            checkBoxWasser.Size = new Size(111, 30);
             checkBoxWasser.TabIndex = 16;
             checkBoxWasser.Text = "Wasser";
             checkBoxWasser.UseVisualStyleBackColor = true;
@@ -180,9 +185,9 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(206, 206);
+            label5.Location = new Point(180, 157);
             label5.Name = "label5";
-            label5.Size = new Size(65, 32);
+            label5.Size = new Size(51, 26);
             label5.TabIndex = 17;
             label5.Text = "10€";
             // 
@@ -190,9 +195,9 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(206, 247);
+            label6.Location = new Point(180, 247);
             label6.Name = "label6";
-            label6.Size = new Size(65, 32);
+            label6.Size = new Size(51, 26);
             label6.TabIndex = 18;
             label6.Text = "05€";
             // 
@@ -200,9 +205,9 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.Location = new Point(206, 288);
+            label7.Location = new Point(180, 185);
             label7.Name = "label7";
-            label7.Size = new Size(65, 32);
+            label7.Size = new Size(51, 26);
             label7.TabIndex = 19;
             label7.Text = "08€";
             // 
@@ -210,9 +215,9 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label8.Location = new Point(206, 329);
+            label8.Location = new Point(180, 216);
             label8.Name = "label8";
-            label8.Size = new Size(65, 32);
+            label8.Size = new Size(51, 26);
             label8.TabIndex = 20;
             label8.Text = "12€";
             // 
@@ -220,29 +225,31 @@
             // 
             gesamtPreis.AutoSize = true;
             gesamtPreis.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            gesamtPreis.Location = new Point(549, 439);
+            gesamtPreis.Location = new Point(480, 329);
             gesamtPreis.Name = "gesamtPreis";
-            gesamtPreis.Size = new Size(48, 32);
+            gesamtPreis.Size = new Size(38, 26);
             gesamtPreis.TabIndex = 21;
             gesamtPreis.Text = "00";
             // 
             // buttonBuchen
             // 
             buttonBuchen.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            buttonBuchen.Location = new Point(12, 433);
+            buttonBuchen.Location = new Point(10, 325);
+            buttonBuchen.Margin = new Padding(3, 2, 3, 2);
             buttonBuchen.Name = "buttonBuchen";
-            buttonBuchen.Size = new Size(269, 45);
+            buttonBuchen.Size = new Size(235, 34);
             buttonBuchen.TabIndex = 22;
             buttonBuchen.Text = "Buchen";
             buttonBuchen.UseVisualStyleBackColor = true;
+            buttonBuchen.Click += buttonBuchen_Click;
             // 
             // label10
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label10.Location = new Point(301, 439);
+            label10.Location = new Point(263, 329);
             label10.Name = "label10";
-            label10.Size = new Size(195, 32);
+            label10.Size = new Size(154, 26);
             label10.TabIndex = 23;
             label10.Text = "Gesamtpreis:";
             // 
@@ -250,9 +257,10 @@
             // 
             button1.Font = new Font("Microsoft Sans Serif", 19.7999973F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = Color.Red;
-            button1.Location = new Point(473, 205);
+            button1.Location = new Point(414, 154);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(412, 134);
+            button1.Size = new Size(360, 100);
             button1.TabIndex = 24;
             button1.Text = "Abo-Bundle";
             button1.UseVisualStyleBackColor = true;
@@ -262,9 +270,9 @@
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label11.Location = new Point(473, 354);
+            label11.Location = new Point(414, 266);
             label11.Name = "label11";
-            label11.Size = new Size(386, 25);
+            label11.Size = new Size(322, 20);
             label11.TabIndex = 25;
             label11.Text = "Kaufe jetzt das Abo-Bundle für nur 30€";
             // 
@@ -272,17 +280,17 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label9.Location = new Point(590, 439);
+            label9.Location = new Point(516, 329);
             label9.Name = "label9";
-            label9.Size = new Size(31, 32);
+            label9.Size = new Size(25, 26);
             label9.TabIndex = 26;
             label9.Text = "€";
             // 
             // AboScreen
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1089, 544);
+            ClientSize = new Size(953, 408);
             Controls.Add(label9);
             Controls.Add(label11);
             Controls.Add(button1);
@@ -295,7 +303,7 @@
             Controls.Add(label5);
             Controls.Add(checkBoxWasser);
             Controls.Add(checkBoxCardio);
-            Controls.Add(checkBoxSauna);
+            Controls.Add(checkBoxWellness);
             Controls.Add(checkBoxMuki);
             Controls.Add(label4);
             Controls.Add(linkAbo);
@@ -304,6 +312,7 @@
             Controls.Add(linkAnmeldung);
             Controls.Add(pictureBox1);
             Controls.Add(label2);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "AboScreen";
             Text = "AboScreen";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -319,10 +328,9 @@
         private Label linkAnmeldung;
         private PictureBox pictureBox1;
         private Label label2;
-        private Label label3;
         private Label label4;
         private CheckBox checkBoxMuki;
-        private CheckBox checkBoxSauna;
+        private CheckBox checkBoxWellness;
         private CheckBox checkBoxCardio;
         private CheckBox checkBoxWasser;
         private Label label5;

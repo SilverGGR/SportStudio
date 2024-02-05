@@ -3,33 +3,20 @@ namespace SportStudio
     public class Membership
     {
         public Guid Id { get; }
-        public string[] Modules { get; set; }
-        public double MonthlyFee { get; set; }
-        public string StartDate { get; set; }
-        public string EndDate { get; set; }
+        public int MonthlyFee { get; set; }
+        public bool MukiAbo {  get; set; }
+        public bool CardioAbo { get; set; }
+        public bool WasserAbo { get; set; }
+        public bool WellnessAbo { get; set; }
 
-        public Membership(string[] modules, double monthlyFee, string startDate, string endDate)
+        public Membership(bool mukiAbo, bool cardioAbo, bool wellnessAbo, bool wasserAbo, int monthlyFee)
         {
             this.Id = Guid.NewGuid();
-            this.Modules = modules;
+            this.MukiAbo = mukiAbo;
+            this.CardioAbo = cardioAbo;
+            this.WasserAbo = wasserAbo;
+            this.WellnessAbo = wellnessAbo;
             this.MonthlyFee = monthlyFee;
-            this.StartDate = startDate;
-            this.EndDate = endDate;
         }
-
-        public double calcMonthlyFee()
-        {
-            if (Modules.Contains("water"))
-
-                MonthlyFee += 10;
-            
-            if (Modules.Contains("sauna"))
-            {
-                MonthlyFee += 10;
-            }
-
-            return MonthlyFee;
-        }
-
     }
 }

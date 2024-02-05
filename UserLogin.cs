@@ -12,10 +12,23 @@ namespace SportStudio
 {
     public partial class UserLogin : Form
     {
+        List<User> users = new List<User>();
 
-        public UserLogin()
+        private Form1 f1;
+
+        public UserLogin(Form1 f)
         {
+            this.f1 = f;
             InitializeComponent();
+
+            users = f1.UsersList;
+            if (f1.ActiveUser != null)
+            {
+                loggedState(false);
+            }
+
+            StreetNumberInput.KeyPress += allowOnlyNumbers;
+            PostalCodeInput.KeyPress += allowOnlyNumbers;
         }
 
         private void LoginChoiceBtn_Click(object sender, EventArgs e)
@@ -51,6 +64,7 @@ namespace SportStudio
                 PostalCodeInput.Hide();
 
                 SubmitBtn.Text = "Anmelden";
+                clearText();
             }
             else
             {
@@ -73,40 +87,108 @@ namespace SportStudio
                 PostalCodeInput.Show();
 
                 SubmitBtn.Text = "Registrieren";
-
+                clearText();
             }
         }
 
         private void SubmitBtn_Click(object sender, EventArgs e)
         {
-            handleLogin();
-            this.Close();
+            if (SubmitBtn.Text == "Anmelden")
+            {
+                handleLogin();
+            }
+            else
+            {
+                handleRegister();
+            }
         }
 
+        private void handleRegister()
+        {
+            if (FirstNameInput.Text == "" || LastNameInput.Text == "" || EmailInput.Text == "" || PasswordInput.Text == "" || StreetInput.Text == "" || StreetNumberInput.Text == "" || CityInput.Text == "" || PostalCodeInput.Text == "")
+            {
+                MessageBox.Show("Bitte füllen sie alle Felder aus");
+            }
+            else
+            {
+                User user = new User(FirstNameInput.Text, LastNameInput.Text, EmailInput.Text, PasswordInput.Text, false, StreetInput.Text, int.Parse(StreetNumberInput.Text), CityInput.Text, int.Parse(PostalCodeInput.Text));
+                users.Add(user);
+                MessageBox.Show($"Welcome, {user.FirstName} {user.LastName}!");
+                f1.ActiveUser = user;
+
+                loggedState(false);
+            }
+        }
         private void handleLogin()
         {
             string enteredEmail = EmailInput.Text;
             string enteredPassword = PasswordInput.Text;
 
-            foreach (User user in Form1.users)
+            foreach (User user in users)
             {
                 if (user.EMail == enteredEmail && user.Password == enteredPassword)
                 {
                     MessageBox.Show($"Welcome, {user.FirstName} {user.LastName}!");
-                    // You can perform additional actions or navigate to another form here
-                    if(user.IsAdmin)
-                    {
-                        Form1.adminMode = true;
-                        Form1.showLinkDataView();
-                    } else
-                    {
-                        Form1.adminMode = false;
-                    }
+                    f1.ActiveUser = user;
+
+                    loggedState(false);
                     return;
                 }
             }
 
             MessageBox.Show("Invalid login credentials. Please try again.");
+        }
+
+        private void buttonLogOut_Click(object sender, EventArgs e)
+        {
+            loggedState(true);
+        }
+
+        private void loggedState(bool logout)
+        {
+            if (logout)
+            {
+                f1.ActiveUser = null;
+                buttonLogOut.Visible = false;
+                label2.Visible = false;
+                labelLoggedName.Visible = false;
+
+                panel1.Visible = true;
+                LoginChoiceBtn.Visible = true;
+                RegChoiceBtn.Visible = true;
+            }
+            else
+            {
+                buttonLogOut.Visible = true;
+                label2.Visible = true;
+                labelLoggedName.Visible = true;
+                labelLoggedName.Text = f1.ActiveUser.FirstName;
+
+                panel1.Visible = false;
+                LoginChoiceBtn.Visible = false;
+                RegChoiceBtn.Visible = false;
+                clearText();
+            }
+        }
+
+        private void clearText()
+        {
+            FirstNameInput.Text = "";
+            LastNameInput.Text = "";
+            EmailInput.Text = "";
+            PasswordInput.Text = "";
+            StreetInput.Text = "";
+            StreetNumberInput.Text = "";
+            CityInput.Text = "";
+            PostalCodeInput.Text = "";
+        }
+
+        private void allowOnlyNumbers (object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }
