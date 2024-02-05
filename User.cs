@@ -8,9 +8,22 @@ namespace SportStudio
         public string EMail { get; set; }
         public string Password { get; set; }
         public Boolean IsAdmin { get; set; }
-        public Address Address { get; set; }
+        public Boolean loggedIn { get; set; }
+        public string Street { get; set; }
+        public int StreetNumber { get; set; }
+        public string City { get; set; }
+        public int PostalCode { get; set; }
 
-        public User(string firstName, string lastName, string eMail, string password, bool isAdmin, Address address)
+        public User(
+            string firstName,
+            string lastName,
+            string eMail,
+            string password,
+            bool isAdmin,
+            string street,
+            int streetNumber,
+            string city,
+            int postalCode)
         {
             this.Id = Guid.NewGuid();
             this.FirstName = firstName;
@@ -18,7 +31,10 @@ namespace SportStudio
             this.EMail = eMail;
             this.Password = password;
             this.IsAdmin = isAdmin;
-            this.Address = address;
+            this.Street = street;
+            this.StreetNumber = streetNumber;
+            this.City = city;
+            this.PostalCode = postalCode;
         }
 
     }

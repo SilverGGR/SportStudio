@@ -6,13 +6,10 @@
 
         public string Name { get; }
 
-        public Address Address { get; set; }
-
-        public SportStudio(Address address)
+        public SportStudio()
         {
             this.Id = Guid.NewGuid();
             this.Name = "Sport und so";
-            this.Address = address;
         }
 
     }

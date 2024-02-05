@@ -994,6 +994,7 @@
             linkDataView.TabIndex = 23;
             linkDataView.Text = "Datenansicht";
             linkDataView.Click += linkDataView_Click;
+            linkDataView.Visible = false;
             // 
             // Form1
             // 
@@ -1015,7 +1016,7 @@
             Controls.Add(buttonWellness);
             Controls.Add(buttonWasser);
             Name = "Form1";
-            Text = "d";
+            // Text = "d";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panelMuki.ResumeLayout(false);
             panelMuki.PerformLayout();

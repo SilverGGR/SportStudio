@@ -1,3 +1,4 @@
+using System.CodeDom;
 using System.Runtime.CompilerServices;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
@@ -6,28 +7,36 @@ namespace SportStudio
 {
     public partial class Form1 : Form
     {
-        public static bool adminMode = false;
         public static List<User> users = new List<User>();
-        Address address1 = new Address("Tomstraﬂe", 21, "Tomstadt", 11223);
         User user1;
+        User user2;
+        User user3;
+
+        UserLogin userlogin;
 
         public Form1()
         {
             InitializeComponent();
 
-            user1 = new User("Tom", "Lumpe", "tom@outlook.com", "tomspasswort", true, address1);
+            user1 = new User("Johannes", "Gabrielsen", "johannes@outlook.com", "jg", true, "Bechtleweg", 21, "Heilbronn", 74076);
+            user2 = new User("Ruven", "Radicke", "ruven@outlook.com", "rr", true, "Kleiner Bechtleweg", 69, "Schwabbach", 79009);
+            user3 = new User("Marc", "Meister", "marc@outlook.com", "mm", false, "Groﬂer Bechtleweg", 99, "Heilbronn", 74078);
             users.Add(user1);
-            MessageBox.Show(user1.FirstName);
-            foreach (User user in users)
+            users.Add(user2);
+            users.Add(user3);
+        }
+
+        public void showLinkDataView(bool show)
+        {
+            if (show)
             {
-                MessageBox.Show($"Benutzer: {user.FirstName} {user.LastName}\nEmail: {user.EMail}\nStraﬂe: {user.Address.Street}\nHausnummer: {user.Address.StreetNumber}");
+                linkDataView.Visible = true;
+            } else
+            {
+                linkDataView.Visible = false;
             }
         }
 
-        public void showLinkDataView()
-        {
-            linkDataView.Hide();
-        }
 
         private void buttonMuki_Click(object sender, EventArgs e)
         {
@@ -76,12 +85,12 @@ namespace SportStudio
 
         private void linkAnmeldung_Click(object sender, EventArgs e)
         {
-            new UserLogin().ShowDialog();
+            new UserLogin(this).ShowDialog();
         }
 
         private void linkDataView_Click(object sender, EventArgs e)
         {
-            new DataView().ShowDialog();
+            new UserDataView().ShowDialog();
         }
     }
 }

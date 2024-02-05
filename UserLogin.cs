@@ -13,9 +13,12 @@ namespace SportStudio
     public partial class UserLogin : Form
     {
 
-        public UserLogin()
+        private Form1 f1;
+
+        public UserLogin(Form1 f1)
         {
             InitializeComponent();
+            this.f1 = f1;
         }
 
         private void LoginChoiceBtn_Click(object sender, EventArgs e)
@@ -96,11 +99,10 @@ namespace SportStudio
                     // You can perform additional actions or navigate to another form here
                     if(user.IsAdmin)
                     {
-                        Form1.adminMode = true;
-                        Form1.showLinkDataView();
+                        f1.showLinkDataView(true);
                     } else
                     {
-                        Form1.adminMode = false;
+                        f1.showLinkDataView(false);
                     }
                     return;
                 }

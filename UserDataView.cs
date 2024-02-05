@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SportStudio
 {
-    public partial class DataView : Form
+    public partial class UserDataView : Form
     {
-        public DataView()
+        public UserDataView()
         {
             InitializeComponent();
         }
