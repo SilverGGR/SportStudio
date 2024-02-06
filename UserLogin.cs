@@ -25,7 +25,7 @@ namespace SportStudio
 
             users = f1.UsersList;
             admins = f1.AdminsList;
-            if (f1.ActiveUser != null)
+            if (f1.ActiveUser != null || f1.ActiveAdmin != null)
             {
                 loggedState(false);
             }
@@ -156,6 +156,7 @@ namespace SportStudio
         private void buttonLogOut_Click(object sender, EventArgs e)
         {
             loggedState(true);
+            f1.showLinkDataView(false);
         }
 
         private void loggedState(bool logout)
@@ -163,6 +164,7 @@ namespace SportStudio
             if (logout)
             {
                 f1.ActiveUser = null;
+                f1.ActiveAdmin = null;
                 buttonLogOut.Visible = false;
                 label2.Visible = false;
                 labelLoggedName.Visible = false;
@@ -179,7 +181,8 @@ namespace SportStudio
                 if (f1.ActiveUser != null)
                 {
                     labelLoggedName.Text = f1.ActiveUser.FirstName;
-                } else
+                }
+                else
                 {
                     labelLoggedName.Text = f1.ActiveAdmin.FirstName;
                 }

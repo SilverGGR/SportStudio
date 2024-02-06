@@ -6,15 +6,18 @@ using System.Threading.Tasks;
 
 namespace SportStudio
 {
-    internal class PremiumUser : User
+    public class PremiumUser : User
     {
-        public PremiumUser(string firstName, string lastName, string email, string password, bool isAdmin, string street, int streetNumber, string city, int postalCode) : base(email, password, firstName, lastName, street, streetNumber, city, postalCode)
+        // Ein PremiumUser ist lediglich ein "Upgrade" und muss deswegen von einem normalen User entstehen und geupgradet werden
+        public PremiumUser(User user) : base(user.Email, user.Password, user.FirstName, user.LastName, user.Street, user.StreetNumber, user.City, user.PostalCode)
         {
+            this.UserMembership = user.UserMembership;
         }
 
         public override void DisplayMembershipInfo()
         {
-            MessageBox.Show("This is a Premium Membership");
+            // Hier muss neue form hin
+            new Secret().ShowDialog();
         }
     }
 }

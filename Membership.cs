@@ -9,7 +9,7 @@ namespace SportStudio
         public bool WasserAbo { get; set; }
         public bool WellnessAbo { get; set; }
 
-        public Membership(bool mukiAbo, bool cardioAbo, bool wellnessAbo, bool wasserAbo, int monthlyFee)
+        public Membership(bool mukiAbo, bool cardioAbo, bool wasserAbo, bool wellnessAbo, int monthlyFee)
         {
             this.Id = Guid.NewGuid();
             this.MukiAbo = mukiAbo;

@@ -28,9 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            linkAbo = new Label();
             label1 = new Label();
-            linkHome = new Label();
             linkAnmeldung = new Label();
             pictureBox1 = new PictureBox();
             FirstNameLabel = new Label();
@@ -60,17 +58,6 @@
             panel1.SuspendLayout();
             SuspendLayout();
             // 
-            // linkAbo
-            // 
-            linkAbo.AutoSize = true;
-            linkAbo.BackColor = Color.FromArgb(217, 46, 24);
-            linkAbo.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            linkAbo.Location = new Point(758, 20);
-            linkAbo.Name = "linkAbo";
-            linkAbo.Size = new Size(41, 20);
-            linkAbo.TabIndex = 8;
-            linkAbo.Text = "Abo";
-            // 
             // label1
             // 
             label1.AutoSize = true;
@@ -82,23 +69,12 @@
             label1.TabIndex = 6;
             label1.Text = "Sport und so";
             // 
-            // linkHome
-            // 
-            linkHome.AutoSize = true;
-            linkHome.BackColor = Color.FromArgb(217, 46, 24);
-            linkHome.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            linkHome.Location = new Point(693, 20);
-            linkHome.Name = "linkHome";
-            linkHome.Size = new Size(56, 20);
-            linkHome.TabIndex = 7;
-            linkHome.Text = "Home";
-            // 
             // linkAnmeldung
             // 
             linkAnmeldung.AutoSize = true;
             linkAnmeldung.BackColor = Color.FromArgb(217, 46, 24);
             linkAnmeldung.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            linkAnmeldung.ForeColor = Color.SpringGreen;
+            linkAnmeldung.ForeColor = Color.White;
             linkAnmeldung.Location = new Point(807, 20);
             linkAnmeldung.Name = "linkAnmeldung";
             linkAnmeldung.Size = new Size(99, 20);
@@ -377,9 +353,7 @@
             Controls.Add(label2);
             Controls.Add(LoginChoiceBtn);
             Controls.Add(RegChoiceBtn);
-            Controls.Add(linkAbo);
             Controls.Add(label1);
-            Controls.Add(linkHome);
             Controls.Add(linkAnmeldung);
             Controls.Add(pictureBox1);
             Margin = new Padding(3, 2, 3, 2);
@@ -393,10 +367,7 @@
         }
 
         #endregion
-
-        private Label linkAbo;
         private Label label1;
-        private Label linkHome;
         private Label linkAnmeldung;
         private PictureBox pictureBox1;
         private Label FirstNameLabel;

@@ -23,13 +23,18 @@ namespace SportStudio
 
             user1 = new User("johannes@outlook.com", "jg", "Johannes", "Gabrielsen", "Bechtleweg", 21, "Heilbronn", 74076);
             user2 = new User("ruven@outlook.com", "rr", "Ruven", "Radicke", "Kleiner Bechtleweg", 69, "Schwabbach", 79009);
-            user3 = new User("marc@outlook.com", "mm", "Marc", "Meister",  "Groﬂer Bechtleweg", 99, "Heilbronn", 74078);
+            user3 = new User("marc@outlook.com", "mm", "Marc", "Meister", "Groﬂer Bechtleweg", 99, "Heilbronn", 74078);
+            User user4 = new User("q", "q", "q", "q", "q", 1, "q", 1);
+            PremiumUser pro = new PremiumUser(user4);
+            User user5 = new User("z", "z", "z", "z", "z", 1, "z", 1);
             admin = new Admin("g", "g", "AdminGuy");
             admins.Add(admin);
             activUser = user1;
             users.Add(user1);
             users.Add(user2);
             users.Add(user3);
+            users.Add(pro);
+            users.Add(user5);
         }
 
         public User? ActiveUser
@@ -57,7 +62,8 @@ namespace SportStudio
             if (show)
             {
                 linkDataView.Visible = true;
-            } else
+            }
+            else
             {
                 linkDataView.Visible = false;
             }
@@ -65,22 +71,82 @@ namespace SportStudio
 
         private void buttonMuki_Click(object sender, EventArgs e)
         {
+            labelMitgliederMuki.Text = "";
             panelMuki.Visible = true;
+            foreach (User user in users)
+            {
+                if (user.UserMembership.MukiAbo == true)
+                {
+                    if (labelMitgliederMuki.Text == "")
+                    {
+                        labelMitgliederMuki.Text = user.FirstName + " " + user.LastName;
+                    }
+                    else
+                    {
+                        labelMitgliederMuki.Text = labelMitgliederMuki.Text + ", " + user.FirstName + " " + user.LastName;
+                    }
+                }
+            }
         }
 
         private void buttonWellness_Click(object sender, EventArgs e)
         {
+            labelMitgliederWellness.Text = "";
             panelWellness.Visible = true;
+            foreach (User user in users)
+            {
+                if (user.UserMembership.WellnessAbo == true)
+                {
+                    if (labelMitgliederWellness.Text == "")
+                    {
+                        labelMitgliederWellness.Text = user.FirstName + " " + user.LastName;
+                    }
+                    else
+                    {
+                        labelMitgliederWellness.Text = labelMitgliederWellness.Text + ", " + user.FirstName + " " + user.LastName;
+                    }
+                }
+            }
         }
 
         private void buttonCardio_Click(object sender, EventArgs e)
         {
+            labelMitgliederCardio.Text = "";
             panelCardio.Visible = true;
+            foreach (User user in users)
+            {
+                if (user.UserMembership.CardioAbo == true)
+                {
+                    if (labelMitgliederCardio.Text == "")
+                    {
+                        labelMitgliederCardio.Text = user.FirstName + " " + user.LastName;
+                    }
+                    else
+                    {
+                        labelMitgliederCardio.Text = labelMitgliederCardio.Text + ", " + user.FirstName + " " + user.LastName;
+                    }
+                }
+            }
         }
 
         private void buttonWasser_Click(object sender, EventArgs e)
         {
+            labelMitgliederWasser.Text = "";
             panelWasser.Visible = true;
+            foreach (User user in users)
+            {
+                if (user.UserMembership.WasserAbo == true)
+                {
+                    if (labelMitgliederWasser.Text == "")
+                    {
+                        labelMitgliederWasser.Text = user.FirstName + " " + user.LastName;
+                    }
+                    else
+                    {
+                        labelMitgliederWasser.Text = labelMitgliederWasser.Text + ", " + user.FirstName + " " + user.LastName;
+                    }
+                }
+            }
         }
 
         private void linkAbo_Click(object sender, EventArgs e)
@@ -123,12 +189,6 @@ namespace SportStudio
         private void linkDataView_Click(object sender, EventArgs e)
         {
             new UserDataView().ShowDialog();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show(activUser.UserMembership.MukiAbo.ToString());
-            activUser.ShowAttributes();
         }
     }
 }

@@ -22,8 +22,8 @@ namespace SportStudio
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // muss hier save
-
+            // Durch das drücken eines Buttons wird hier lediglich der letzte Bearbeitungsvorgang übernommen daher ist hier keine Methode nötig 
+            // Sieht auch bissle schöner aus, wenn man auf einen Button drückt :D
         }
     }
 }

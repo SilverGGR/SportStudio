@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             pictureBox1 = new PictureBox();
             label1 = new Label();
-            linkHome = new Label();
             linkAbo = new Label();
             linkAnmeldung = new Label();
             panelMuki = new Panel();
+            labelMitgliederMuki = new Label();
             mukiBackButton = new Button();
             panel3 = new Panel();
             pictureBox4 = new PictureBox();
@@ -55,6 +55,7 @@
             buttonWellness = new Button();
             buttonWasser = new Button();
             panelWellness = new Panel();
+            labelMitgliederWellness = new Label();
             wellnessBackButton = new Button();
             panel5 = new Panel();
             pictureBox5 = new PictureBox();
@@ -72,6 +73,7 @@
             label15 = new Label();
             label16 = new Label();
             panelCardio = new Panel();
+            labelMitgliederCardio = new Label();
             cardioBackButton = new Button();
             panel9 = new Panel();
             pictureBox8 = new PictureBox();
@@ -89,6 +91,7 @@
             label25 = new Label();
             label26 = new Label();
             panelWasser = new Panel();
+            labelMitgliederWasser = new Label();
             wasserBackButton = new Button();
             panel13 = new Panel();
             pictureBox11 = new PictureBox();
@@ -106,7 +109,6 @@
             label34 = new Label();
             label35 = new Label();
             linkDataView = new Label();
-            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panelMuki.SuspendLayout();
             panel3.SuspendLayout();
@@ -160,17 +162,6 @@
             label1.TabIndex = 1;
             label1.Text = "Sport und so";
             // 
-            // linkHome
-            // 
-            linkHome.AutoSize = true;
-            linkHome.BackColor = Color.FromArgb(217, 46, 24);
-            linkHome.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            linkHome.Location = new Point(850, 21);
-            linkHome.Name = "linkHome";
-            linkHome.Size = new Size(56, 20);
-            linkHome.TabIndex = 2;
-            linkHome.Text = "Home";
-            // 
             // linkAbo
             // 
             linkAbo.AutoSize = true;
@@ -199,6 +190,7 @@
             // 
             panelMuki.BackColor = Color.White;
             panelMuki.BackgroundImageLayout = ImageLayout.Zoom;
+            panelMuki.Controls.Add(labelMitgliederMuki);
             panelMuki.Controls.Add(mukiBackButton);
             panelMuki.Controls.Add(panel3);
             panelMuki.Controls.Add(panel2);
@@ -211,6 +203,15 @@
             panelMuki.Size = new Size(1221, 606);
             panelMuki.TabIndex = 6;
             panelMuki.Visible = false;
+            // 
+            // labelMitgliederMuki
+            // 
+            labelMitgliederMuki.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            labelMitgliederMuki.Location = new Point(816, 28);
+            labelMitgliederMuki.Name = "labelMitgliederMuki";
+            labelMitgliederMuki.Size = new Size(389, 39);
+            labelMitgliederMuki.TabIndex = 26;
+            labelMitgliederMuki.Text = "-";
             // 
             // mukiBackButton
             // 
@@ -432,6 +433,7 @@
             // 
             panelWellness.BackColor = Color.White;
             panelWellness.BackgroundImageLayout = ImageLayout.Zoom;
+            panelWellness.Controls.Add(labelMitgliederWellness);
             panelWellness.Controls.Add(wellnessBackButton);
             panelWellness.Controls.Add(panel5);
             panelWellness.Controls.Add(panel6);
@@ -444,6 +446,15 @@
             panelWellness.Size = new Size(1221, 606);
             panelWellness.TabIndex = 20;
             panelWellness.Visible = false;
+            // 
+            // labelMitgliederWellness
+            // 
+            labelMitgliederWellness.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            labelMitgliederWellness.Location = new Point(816, 28);
+            labelMitgliederWellness.Name = "labelMitgliederWellness";
+            labelMitgliederWellness.Size = new Size(389, 39);
+            labelMitgliederWellness.TabIndex = 27;
+            labelMitgliederWellness.Text = "-";
             // 
             // wellnessBackButton
             // 
@@ -590,7 +601,7 @@
             // 
             label15.AutoSize = true;
             label15.Font = new Font("Segoe UI", 9F, FontStyle.Underline, GraphicsUnit.Point);
-            label15.Location = new Point(813, 12);
+            label15.Location = new Point(813, 8);
             label15.Name = "label15";
             label15.Size = new Size(64, 15);
             label15.TabIndex = 10;
@@ -611,6 +622,7 @@
             // 
             panelCardio.BackColor = Color.White;
             panelCardio.BackgroundImageLayout = ImageLayout.Zoom;
+            panelCardio.Controls.Add(labelMitgliederCardio);
             panelCardio.Controls.Add(cardioBackButton);
             panelCardio.Controls.Add(panel9);
             panelCardio.Controls.Add(panel10);
@@ -623,6 +635,15 @@
             panelCardio.Size = new Size(1221, 606);
             panelCardio.TabIndex = 21;
             panelCardio.Visible = false;
+            // 
+            // labelMitgliederCardio
+            // 
+            labelMitgliederCardio.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            labelMitgliederCardio.Location = new Point(816, 30);
+            labelMitgliederCardio.Name = "labelMitgliederCardio";
+            labelMitgliederCardio.Size = new Size(389, 39);
+            labelMitgliederCardio.TabIndex = 27;
+            labelMitgliederCardio.Text = "-";
             // 
             // cardioBackButton
             // 
@@ -790,6 +811,7 @@
             // 
             panelWasser.BackColor = Color.White;
             panelWasser.BackgroundImageLayout = ImageLayout.Zoom;
+            panelWasser.Controls.Add(labelMitgliederWasser);
             panelWasser.Controls.Add(wasserBackButton);
             panelWasser.Controls.Add(panel13);
             panelWasser.Controls.Add(panel14);
@@ -802,6 +824,15 @@
             panelWasser.Size = new Size(1221, 606);
             panelWasser.TabIndex = 22;
             panelWasser.Visible = false;
+            // 
+            // labelMitgliederWasser
+            // 
+            labelMitgliederWasser.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            labelMitgliederWasser.Location = new Point(816, 30);
+            labelMitgliederWasser.Name = "labelMitgliederWasser";
+            labelMitgliederWasser.Size = new Size(389, 39);
+            labelMitgliederWasser.TabIndex = 27;
+            labelMitgliederWasser.Text = "-";
             // 
             // wasserBackButton
             // 
@@ -976,28 +1007,15 @@
             linkDataView.TabIndex = 23;
             linkDataView.Text = "Datenansicht";
             linkDataView.Click += linkDataView_Click;
-            linkDataView.Visible = false;
-            // 
-            // button1
-            // 
-            button1.Location = new Point(225, 12);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 24;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1245, 675);
-            Controls.Add(button1);
             Controls.Add(linkDataView);
             Controls.Add(linkAbo);
             Controls.Add(label1);
-            Controls.Add(linkHome);
             Controls.Add(linkAnmeldung);
             Controls.Add(pictureBox1);
             Controls.Add(panelMuki);
@@ -1006,11 +1024,10 @@
             Controls.Add(panelWellness);
             Controls.Add(buttonMuki);
             Controls.Add(buttonCardio);
-            Controls.Add(buttonWellness);
             Controls.Add(buttonWasser);
+            Controls.Add(buttonWellness);
             Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
-            // Text = "d";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panelMuki.ResumeLayout(false);
             panelMuki.PerformLayout();
@@ -1064,7 +1081,6 @@
 
         private PictureBox pictureBox1;
         private Label label1;
-        private Label linkHome;
         private Label linkAbo;
         private Label linkAnmeldung;
         private Panel panelMuki;
@@ -1139,6 +1155,9 @@
         private Button cardioBackButton;
         private Button wellnessBackButton;
         private Label linkDataView;
-        private Button button1;
+        private Label labelMitgliederMuki;
+        private Label labelMitgliederWellness;
+        private Label labelMitgliederCardio;
+        private Label labelMitgliederWasser;
     }
 }

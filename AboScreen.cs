@@ -13,10 +13,29 @@ namespace SportStudio
     public partial class AboScreen : Form
     {
         private Form1 f1;
+        Membership tempMembership;
         public AboScreen(Form1 f1)
         {
             InitializeComponent();
             this.f1 = f1;
+
+            tempMembership = f1.ActiveUser.UserMembership;
+            if (tempMembership.MukiAbo == true)
+            {
+                checkBoxMuki.Checked = true;
+            }
+            if (tempMembership.CardioAbo == true)
+            {
+                checkBoxCardio.Checked = true;
+            }
+            if (tempMembership.WasserAbo == true)
+            {
+                checkBoxWasser.Checked = true;
+            }
+            if (tempMembership.WellnessAbo == true)
+            {
+                checkBoxWellness.Checked = true;
+            }
         }
 
         int gesamtpreis = 0;
@@ -43,7 +62,7 @@ namespace SportStudio
             checkedAll();
         }
 
-        private void checkBoxSauna_CheckedChanged(object sender, EventArgs e)
+        private void checkBoxWellness_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBoxWellness.Checked)
             {
@@ -97,8 +116,29 @@ namespace SportStudio
 
         private void buttonBuchen_Click(object sender, EventArgs e)
         {
-            Membership membership = new Membership(checkBoxMuki.Checked, checkBoxCardio.Checked, checkBoxWasser.Checked, checkBoxWellness.Checked, gesamtpreis);
+            Membership membership = new Membership(checkBoxMuki.Checked, checkBoxCardio.Checked, checkBoxWasser.Checked, checkBoxWellness.Checked, int.Parse(gesamtPreis.Text));
             f1.ActiveUser.UserMembership = membership;
+            MessageBox.Show("Deine Buchung war erfolgreich");
+        }
+
+        private void buttonShowAbo_Click(object sender, EventArgs e)
+        {
+            f1.ActiveUser.DisplayMembershipInfo();
+        }
+
+        private void buttonSecret_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Sie haben noch zeit umzukehren!", "Unnormal Spannendes Geheimnis", MessageBoxButtons.AbortRetryIgnore, MessageBoxIcon.Warning);
+
+            if (result == DialogResult.Ignore) 
+            {
+                PremiumUser user1 = new PremiumUser(f1.ActiveUser);
+
+                f1.UsersList.Remove(f1.ActiveUser);
+                f1.UsersList.Add(user1);
+
+                f1.ActiveUser = user1;
+            }
         }
     }
 }
