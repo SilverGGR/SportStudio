@@ -15,6 +15,15 @@ namespace SportStudio
         public UserDataView()
         {
             InitializeComponent();
+            userBindingSource.DataSource = Form1.users;
+            membershipBindingSource.DataSource = Form1.users.Select(u => u.UserMembership).ToList();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // muss hier save
+
         }
     }
 }

@@ -124,6 +124,7 @@
             FirstNameLabel.Size = new Size(54, 15);
             FirstNameLabel.TabIndex = 10;
             FirstNameLabel.Text = "Vorname";
+            FirstNameLabel.Visible = false;
             // 
             // FirstNameInput
             // 
@@ -133,6 +134,7 @@
             FirstNameInput.Name = "FirstNameInput";
             FirstNameInput.Size = new Size(156, 29);
             FirstNameInput.TabIndex = 11;
+            FirstNameInput.Visible = false;
             // 
             // LastNameInput
             // 
@@ -142,6 +144,7 @@
             LastNameInput.Name = "LastNameInput";
             LastNameInput.Size = new Size(156, 29);
             LastNameInput.TabIndex = 13;
+            LastNameInput.Visible = false;
             // 
             // LastNameLabel
             // 
@@ -151,6 +154,7 @@
             LastNameLabel.Size = new Size(65, 15);
             LastNameLabel.TabIndex = 12;
             LastNameLabel.Text = "Nachname";
+            LastNameLabel.Visible = false;
             // 
             // PasswordInput
             // 
@@ -197,6 +201,7 @@
             PostalCodeInput.Name = "PostalCodeInput";
             PostalCodeInput.Size = new Size(156, 29);
             PostalCodeInput.TabIndex = 25;
+            PostalCodeInput.Visible = false;
             // 
             // PostalCodeLabel
             // 
@@ -206,6 +211,7 @@
             PostalCodeLabel.Size = new Size(27, 15);
             PostalCodeLabel.TabIndex = 24;
             PostalCodeLabel.Text = "PLZ";
+            PostalCodeLabel.Visible = false;
             // 
             // CityInput
             // 
@@ -215,6 +221,7 @@
             CityInput.Name = "CityInput";
             CityInput.Size = new Size(156, 29);
             CityInput.TabIndex = 23;
+            CityInput.Visible = false;
             // 
             // CityLabel
             // 
@@ -224,6 +231,7 @@
             CityLabel.Size = new Size(24, 15);
             CityLabel.TabIndex = 22;
             CityLabel.Text = "Ort";
+            CityLabel.Visible = false;
             // 
             // StreetNumberInput
             // 
@@ -233,6 +241,7 @@
             StreetNumberInput.Name = "StreetNumberInput";
             StreetNumberInput.Size = new Size(156, 29);
             StreetNumberInput.TabIndex = 21;
+            StreetNumberInput.Visible = false;
             // 
             // StreetNumberLabel
             // 
@@ -242,6 +251,7 @@
             StreetNumberLabel.Size = new Size(80, 15);
             StreetNumberLabel.TabIndex = 20;
             StreetNumberLabel.Text = "Hausnummer";
+            StreetNumberLabel.Visible = false;
             // 
             // StreetInput
             // 
@@ -251,6 +261,7 @@
             StreetInput.Name = "StreetInput";
             StreetInput.Size = new Size(156, 29);
             StreetInput.TabIndex = 19;
+            StreetInput.Visible = false;
             // 
             // StreetLabel
             // 
@@ -260,6 +271,7 @@
             StreetLabel.Size = new Size(40, 15);
             StreetLabel.TabIndex = 18;
             StreetLabel.Text = "Straße";
+            StreetLabel.Visible = false;
             // 
             // SubmitBtn
             // 
@@ -269,7 +281,7 @@
             SubmitBtn.Name = "SubmitBtn";
             SubmitBtn.Size = new Size(109, 34);
             SubmitBtn.TabIndex = 26;
-            SubmitBtn.Text = "Registrieren";
+            SubmitBtn.Text = "Anmelden";
             SubmitBtn.UseVisualStyleBackColor = true;
             SubmitBtn.Click += SubmitBtn_Click;
             // 

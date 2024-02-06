@@ -1,13 +1,14 @@
 namespace SportStudio
 {
-    public class User
+    public class User : IUser
     {
         public Guid Id { get; }
+
+        public string Email { get; set; }
+        public string Password { get; set; }
+
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string EMail { get; set; }
-        public string Password { get; set; }
-        public bool IsAdmin { get; set; }
         public string Street { get; set; }
         public int StreetNumber { get; set; }
         public string City { get; set; }
@@ -16,11 +17,10 @@ namespace SportStudio
         public Membership UserMembership { get; set; }
 
         public User(
+            string email,
+            string password,
             string firstName,
             string lastName,
-            string eMail,
-            string password,
-            bool isAdmin,
             string street,
             int streetNumber,
             string city,
@@ -28,11 +28,10 @@ namespace SportStudio
             )
         {
             this.Id = Guid.NewGuid();
+            this.Email = email;
+            this.Password = password;
             this.FirstName = firstName;
             this.LastName = lastName;
-            this.EMail = eMail;
-            this.Password = password;
-            this.IsAdmin = isAdmin;
             this.Street = street;
             this.StreetNumber = streetNumber;
             this.City = city;
@@ -41,5 +40,14 @@ namespace SportStudio
             this.UserMembership = new Membership(false, false, false, false, 0);
         }
 
+        public virtual void DisplayMembershipInfo()
+        {
+            MessageBox.Show("This is a regular Membership");
+        }
+
+        public void ShowAttributes()
+        {
+            MessageBox.Show($"Email: {Email}\nPassword: {Password}\nFirstName: {FirstName}\nLastName: {LastName}\nStreet: {Street}\nStreetNumber: {StreetNumber}\nCity: {City}\nPostalCode: {PostalCode}");
+        }
     }
 }

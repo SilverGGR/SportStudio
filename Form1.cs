@@ -1,5 +1,6 @@
 using System.CodeDom;
 using System.Runtime.CompilerServices;
+using System.Windows.Forms;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 
@@ -8,21 +9,27 @@ namespace SportStudio
     public partial class Form1 : Form
     {
         public static List<User> users = new List<User>();
+        public static List<Admin> admins = new List<Admin>();
         public static User? activUser;
+        public static Admin? activeAdmin;
         User user1;
         User user2;
         User user3;
-
-        UserLogin userlogin;
+        Admin admin;
 
         public Form1()
         {
             InitializeComponent();
 
-            user1 = new User("Johannes", "Gabrielsen", "johannes@outlook.com", "jg", true, "Bechtleweg", 21, "Heilbronn", 74076);
-            user2 = new User("Ruven", "Radicke", "ruven@outlook.com", "rr", true, "Kleiner Bechtleweg", 69, "Schwabbach", 79009);
-            user3 = new User("Marc", "Meister", "marc@outlook.com", "mm", false, "Groﬂer Bechtleweg", 99, "Heilbronn", 74078);
+            user1 = new User("johannes@outlook.com", "jg", "Johannes", "Gabrielsen", "Bechtleweg", 21, "Heilbronn", 74076);
+            user2 = new User("ruven@outlook.com", "rr", "Ruven", "Radicke", "Kleiner Bechtleweg", 69, "Schwabbach", 79009);
+            user3 = new User("marc@outlook.com", "mm", "Marc", "Meister",  "Groﬂer Bechtleweg", 99, "Heilbronn", 74078);
+            admin = new Admin("g", "g", "AdminGuy");
+            admins.Add(admin);
+            activUser = user1;
             users.Add(user1);
+            users.Add(user2);
+            users.Add(user3);
         }
 
         public User? ActiveUser
@@ -35,9 +42,25 @@ namespace SportStudio
         {
             get { return users; }
         }
-        public void showLinkDataView()
+
+        public Admin? ActiveAdmin
         {
-            linkDataView.Visible = false;
+            get { return activeAdmin; }
+            set { activeAdmin = value; }
+        }
+        public List<Admin> AdminsList
+        {
+            get { return admins; }
+        }
+        public void showLinkDataView(bool show)
+        {
+            if (show)
+            {
+                linkDataView.Visible = true;
+            } else
+            {
+                linkDataView.Visible = false;
+            }
         }
 
         private void buttonMuki_Click(object sender, EventArgs e)
@@ -105,6 +128,7 @@ namespace SportStudio
         private void button1_Click(object sender, EventArgs e)
         {
             MessageBox.Show(activUser.UserMembership.MukiAbo.ToString());
+            activUser.ShowAttributes();
         }
     }
 }

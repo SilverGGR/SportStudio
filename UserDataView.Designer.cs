@@ -29,147 +29,222 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            userDataViewTable = new DataGridView();
-            idDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            firstNameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            lastNameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            eMailDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            passwordDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            isAdminDataGridViewCheckBoxColumn = new DataGridViewCheckBoxColumn();
-            streetDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            streetNumberDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            cityDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            postalCodeDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            userBindingSource2 = new BindingSource(components);
             userBindingSource = new BindingSource(components);
-            ((System.ComponentModel.ISupportInitialize)userDataViewTable).BeginInit();
+            userBindingSource1 = new BindingSource(components);
+            dataGridView1 = new DataGridView();
+            idDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            Email = new DataGridViewTextBoxColumn();
+            Password = new DataGridViewTextBoxColumn();
+            FirstName = new DataGridViewTextBoxColumn();
+            LastName = new DataGridViewTextBoxColumn();
+            Street = new DataGridViewTextBoxColumn();
+            StreetNumber = new DataGridViewTextBoxColumn();
+            City = new DataGridViewTextBoxColumn();
+            PostalCode = new DataGridViewTextBoxColumn();
+            dataGridView2 = new DataGridView();
+            idDataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
+            monthlyFeeDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            mukiAboDataGridViewCheckBoxColumn = new DataGridViewCheckBoxColumn();
+            cardioAboDataGridViewCheckBoxColumn = new DataGridViewCheckBoxColumn();
+            wasserAboDataGridViewCheckBoxColumn = new DataGridViewCheckBoxColumn();
+            wellnessAboDataGridViewCheckBoxColumn = new DataGridViewCheckBoxColumn();
+            membershipBindingSource = new BindingSource(components);
+            button1 = new Button();
+            ((System.ComponentModel.ISupportInitialize)userBindingSource2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)userBindingSource).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)userBindingSource1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)membershipBindingSource).BeginInit();
             SuspendLayout();
             // 
-            // userDataViewTable
+            // userBindingSource2
             // 
-            userDataViewTable.AutoGenerateColumns = false;
-            userDataViewTable.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            userDataViewTable.Columns.AddRange(new DataGridViewColumn[] { idDataGridViewTextBoxColumn, firstNameDataGridViewTextBoxColumn, lastNameDataGridViewTextBoxColumn, eMailDataGridViewTextBoxColumn, passwordDataGridViewTextBoxColumn, isAdminDataGridViewCheckBoxColumn, streetDataGridViewTextBoxColumn, streetNumberDataGridViewTextBoxColumn, cityDataGridViewTextBoxColumn, postalCodeDataGridViewTextBoxColumn });
-            userDataViewTable.DataSource = userBindingSource;
-            userDataViewTable.Location = new Point(12, 12);
-            userDataViewTable.Name = "userDataViewTable";
-            userDataViewTable.RowHeadersWidth = 51;
-            userDataViewTable.RowTemplate.Height = 29;
-            userDataViewTable.Size = new Size(1304, 188);
-            userDataViewTable.TabIndex = 0;
-            userDataViewTable.DataSource = Form1.users;
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            idDataGridViewTextBoxColumn.HeaderText = "Id";
-            idDataGridViewTextBoxColumn.MinimumWidth = 6;
-            idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            idDataGridViewTextBoxColumn.ReadOnly = true;
-            idDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // firstNameDataGridViewTextBoxColumn
-            // 
-            firstNameDataGridViewTextBoxColumn.DataPropertyName = "FirstName";
-            firstNameDataGridViewTextBoxColumn.HeaderText = "FirstName";
-            firstNameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
-            firstNameDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // lastNameDataGridViewTextBoxColumn
-            // 
-            lastNameDataGridViewTextBoxColumn.DataPropertyName = "LastName";
-            lastNameDataGridViewTextBoxColumn.HeaderText = "LastName";
-            lastNameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
-            lastNameDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // eMailDataGridViewTextBoxColumn
-            // 
-            eMailDataGridViewTextBoxColumn.DataPropertyName = "EMail";
-            eMailDataGridViewTextBoxColumn.HeaderText = "EMail";
-            eMailDataGridViewTextBoxColumn.MinimumWidth = 6;
-            eMailDataGridViewTextBoxColumn.Name = "eMailDataGridViewTextBoxColumn";
-            eMailDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // passwordDataGridViewTextBoxColumn
-            // 
-            passwordDataGridViewTextBoxColumn.DataPropertyName = "Password";
-            passwordDataGridViewTextBoxColumn.HeaderText = "Password";
-            passwordDataGridViewTextBoxColumn.MinimumWidth = 6;
-            passwordDataGridViewTextBoxColumn.Name = "passwordDataGridViewTextBoxColumn";
-            passwordDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // isAdminDataGridViewCheckBoxColumn
-            // 
-            isAdminDataGridViewCheckBoxColumn.DataPropertyName = "IsAdmin";
-            isAdminDataGridViewCheckBoxColumn.HeaderText = "IsAdmin";
-            isAdminDataGridViewCheckBoxColumn.MinimumWidth = 6;
-            isAdminDataGridViewCheckBoxColumn.Name = "isAdminDataGridViewCheckBoxColumn";
-            isAdminDataGridViewCheckBoxColumn.Width = 125;
-            // 
-            // streetDataGridViewTextBoxColumn
-            // 
-            streetDataGridViewTextBoxColumn.DataPropertyName = "Street";
-            streetDataGridViewTextBoxColumn.HeaderText = "Street";
-            streetDataGridViewTextBoxColumn.MinimumWidth = 6;
-            streetDataGridViewTextBoxColumn.Name = "streetDataGridViewTextBoxColumn";
-            streetDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // streetNumberDataGridViewTextBoxColumn
-            // 
-            streetNumberDataGridViewTextBoxColumn.DataPropertyName = "StreetNumber";
-            streetNumberDataGridViewTextBoxColumn.HeaderText = "StreetNumber";
-            streetNumberDataGridViewTextBoxColumn.MinimumWidth = 6;
-            streetNumberDataGridViewTextBoxColumn.Name = "streetNumberDataGridViewTextBoxColumn";
-            streetNumberDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // cityDataGridViewTextBoxColumn
-            // 
-            cityDataGridViewTextBoxColumn.DataPropertyName = "City";
-            cityDataGridViewTextBoxColumn.HeaderText = "City";
-            cityDataGridViewTextBoxColumn.MinimumWidth = 6;
-            cityDataGridViewTextBoxColumn.Name = "cityDataGridViewTextBoxColumn";
-            cityDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // postalCodeDataGridViewTextBoxColumn
-            // 
-            postalCodeDataGridViewTextBoxColumn.DataPropertyName = "PostalCode";
-            postalCodeDataGridViewTextBoxColumn.HeaderText = "PostalCode";
-            postalCodeDataGridViewTextBoxColumn.MinimumWidth = 6;
-            postalCodeDataGridViewTextBoxColumn.Name = "postalCodeDataGridViewTextBoxColumn";
-            postalCodeDataGridViewTextBoxColumn.Width = 125;
+            userBindingSource2.DataSource = typeof(User);
             // 
             // userBindingSource
             // 
             userBindingSource.DataSource = typeof(User);
             // 
+            // userBindingSource1
+            // 
+            userBindingSource1.DataSource = typeof(User);
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { idDataGridViewTextBoxColumn, Email, Password, FirstName, LastName, Street, StreetNumber, City, PostalCode });
+            dataGridView1.DataSource = userBindingSource;
+            dataGridView1.Location = new Point(12, 12);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowTemplate.Height = 25;
+            dataGridView1.Size = new Size(944, 150);
+            dataGridView1.TabIndex = 1;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            idDataGridViewTextBoxColumn.HeaderText = "Id";
+            idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            idDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // Email
+            // 
+            Email.DataPropertyName = "Email";
+            Email.HeaderText = "Email";
+            Email.Name = "Email";
+            // 
+            // Password
+            // 
+            Password.DataPropertyName = "Password";
+            Password.HeaderText = "Password";
+            Password.Name = "Password";
+            // 
+            // FirstName
+            // 
+            FirstName.DataPropertyName = "FirstName";
+            FirstName.HeaderText = "FirstName";
+            FirstName.Name = "FirstName";
+            // 
+            // LastName
+            // 
+            LastName.DataPropertyName = "LastName";
+            LastName.HeaderText = "LastName";
+            LastName.Name = "LastName";
+            // 
+            // Street
+            // 
+            Street.DataPropertyName = "Street";
+            Street.HeaderText = "Street";
+            Street.Name = "Street";
+            // 
+            // StreetNumber
+            // 
+            StreetNumber.DataPropertyName = "StreetNumber";
+            StreetNumber.HeaderText = "StreetNumber";
+            StreetNumber.Name = "StreetNumber";
+            // 
+            // City
+            // 
+            City.DataPropertyName = "City";
+            City.HeaderText = "City";
+            City.Name = "City";
+            // 
+            // PostalCode
+            // 
+            PostalCode.DataPropertyName = "PostalCode";
+            PostalCode.HeaderText = "PostalCode";
+            PostalCode.Name = "PostalCode";
+            // 
+            // dataGridView2
+            // 
+            dataGridView2.AutoGenerateColumns = false;
+            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView2.Columns.AddRange(new DataGridViewColumn[] { idDataGridViewTextBoxColumn1, monthlyFeeDataGridViewTextBoxColumn, mukiAboDataGridViewCheckBoxColumn, cardioAboDataGridViewCheckBoxColumn, wasserAboDataGridViewCheckBoxColumn, wellnessAboDataGridViewCheckBoxColumn });
+            dataGridView2.DataSource = membershipBindingSource;
+            dataGridView2.Location = new Point(952, 12);
+            dataGridView2.Name = "dataGridView2";
+            dataGridView2.RowTemplate.Height = 25;
+            dataGridView2.Size = new Size(643, 150);
+            dataGridView2.TabIndex = 2;
+            // 
+            // idDataGridViewTextBoxColumn1
+            // 
+            idDataGridViewTextBoxColumn1.DataPropertyName = "Id";
+            idDataGridViewTextBoxColumn1.HeaderText = "Id";
+            idDataGridViewTextBoxColumn1.Name = "idDataGridViewTextBoxColumn1";
+            idDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // monthlyFeeDataGridViewTextBoxColumn
+            // 
+            monthlyFeeDataGridViewTextBoxColumn.DataPropertyName = "MonthlyFee";
+            monthlyFeeDataGridViewTextBoxColumn.HeaderText = "MonthlyFee";
+            monthlyFeeDataGridViewTextBoxColumn.Name = "monthlyFeeDataGridViewTextBoxColumn";
+            // 
+            // mukiAboDataGridViewCheckBoxColumn
+            // 
+            mukiAboDataGridViewCheckBoxColumn.DataPropertyName = "MukiAbo";
+            mukiAboDataGridViewCheckBoxColumn.HeaderText = "MukiAbo";
+            mukiAboDataGridViewCheckBoxColumn.Name = "mukiAboDataGridViewCheckBoxColumn";
+            // 
+            // cardioAboDataGridViewCheckBoxColumn
+            // 
+            cardioAboDataGridViewCheckBoxColumn.DataPropertyName = "CardioAbo";
+            cardioAboDataGridViewCheckBoxColumn.HeaderText = "CardioAbo";
+            cardioAboDataGridViewCheckBoxColumn.Name = "cardioAboDataGridViewCheckBoxColumn";
+            // 
+            // wasserAboDataGridViewCheckBoxColumn
+            // 
+            wasserAboDataGridViewCheckBoxColumn.DataPropertyName = "WasserAbo";
+            wasserAboDataGridViewCheckBoxColumn.HeaderText = "WasserAbo";
+            wasserAboDataGridViewCheckBoxColumn.Name = "wasserAboDataGridViewCheckBoxColumn";
+            // 
+            // wellnessAboDataGridViewCheckBoxColumn
+            // 
+            wellnessAboDataGridViewCheckBoxColumn.DataPropertyName = "WellnessAbo";
+            wellnessAboDataGridViewCheckBoxColumn.HeaderText = "WellnessAbo";
+            wellnessAboDataGridViewCheckBoxColumn.Name = "wellnessAboDataGridViewCheckBoxColumn";
+            // 
+            // membershipBindingSource
+            // 
+            membershipBindingSource.DataSource = typeof(Membership);
+            // 
+            // button1
+            // 
+            button1.Location = new Point(12, 190);
+            button1.Name = "button1";
+            button1.Size = new Size(91, 40);
+            button1.TabIndex = 3;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // UserDataView
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1331, 450);
-            Controls.Add(userDataViewTable);
+            ClientSize = new Size(1656, 338);
+            Controls.Add(button1);
+            Controls.Add(dataGridView2);
+            Controls.Add(dataGridView1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "UserDataView";
             Text = "UserDataView";
-            ((System.ComponentModel.ISupportInitialize)userDataViewTable).EndInit();
+            ((System.ComponentModel.ISupportInitialize)userBindingSource2).EndInit();
             ((System.ComponentModel.ISupportInitialize)userBindingSource).EndInit();
+            ((System.ComponentModel.ISupportInitialize)userBindingSource1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)membershipBindingSource).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
-
-        private DataGridView userDataViewTable;
-        private DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn firstNameDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn lastNameDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn eMailDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn passwordDataGridViewTextBoxColumn;
         private DataGridViewCheckBoxColumn isAdminDataGridViewCheckBoxColumn;
-        private DataGridViewTextBoxColumn streetDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn streetNumberDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn cityDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn postalCodeDataGridViewTextBoxColumn;
         private BindingSource userBindingSource;
+        private BindingSource userBindingSource1;
+        private BindingSource userBindingSource2;
+        private DataGridView dataGridView1;
+        private DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn Email;
+        private DataGridViewTextBoxColumn Password;
+        private DataGridViewTextBoxColumn FirstName;
+        private DataGridViewTextBoxColumn LastName;
+        private DataGridViewTextBoxColumn Street;
+        private DataGridViewTextBoxColumn StreetNumber;
+        private DataGridViewTextBoxColumn City;
+        private DataGridViewTextBoxColumn PostalCode;
+        private DataGridView dataGridView2;
+        private DataGridViewTextBoxColumn idDataGridViewTextBoxColumn1;
+        private DataGridViewTextBoxColumn monthlyFeeDataGridViewTextBoxColumn;
+        private DataGridViewCheckBoxColumn mukiAboDataGridViewCheckBoxColumn;
+        private DataGridViewCheckBoxColumn cardioAboDataGridViewCheckBoxColumn;
+        private DataGridViewCheckBoxColumn wasserAboDataGridViewCheckBoxColumn;
+        private DataGridViewCheckBoxColumn wellnessAboDataGridViewCheckBoxColumn;
+        private BindingSource membershipBindingSource;
+        private Button button1;
     }
 }

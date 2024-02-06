@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic.ApplicationServices;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +14,7 @@ namespace SportStudio
     public partial class UserLogin : Form
     {
         List<User> users = new List<User>();
+        List<Admin> admins = new List<Admin>();
 
         private Form1 f1;
 
@@ -22,6 +24,7 @@ namespace SportStudio
             InitializeComponent();
 
             users = f1.UsersList;
+            admins = f1.AdminsList;
             if (f1.ActiveUser != null)
             {
                 loggedState(false);
@@ -111,7 +114,7 @@ namespace SportStudio
             }
             else
             {
-                User user = new User(FirstNameInput.Text, LastNameInput.Text, EmailInput.Text, PasswordInput.Text, false, StreetInput.Text, int.Parse(StreetNumberInput.Text), CityInput.Text, int.Parse(PostalCodeInput.Text));
+                User user = new User(EmailInput.Text, PasswordInput.Text, FirstNameInput.Text, LastNameInput.Text, StreetInput.Text, int.Parse(StreetNumberInput.Text), CityInput.Text, int.Parse(PostalCodeInput.Text));
                 users.Add(user);
                 MessageBox.Show($"Welcome, {user.FirstName} {user.LastName}!");
                 f1.ActiveUser = user;
@@ -126,11 +129,22 @@ namespace SportStudio
 
             foreach (User user in users)
             {
-                if (user.EMail == enteredEmail && user.Password == enteredPassword)
+                if (user.Email == enteredEmail && user.Password == enteredPassword)
                 {
                     MessageBox.Show($"Welcome, {user.FirstName} {user.LastName}!");
                     f1.ActiveUser = user;
 
+                    loggedState(false);
+                    return;
+                }
+            }
+            foreach (Admin admin in admins)
+            {
+                if (admin.Email == enteredEmail && admin.Password == enteredPassword)
+                {
+                    MessageBox.Show("Willkommen werter Herr Admin!");
+                    f1.ActiveAdmin = admin;
+                    f1.showLinkDataView(true);
                     loggedState(false);
                     return;
                 }
@@ -162,7 +176,14 @@ namespace SportStudio
                 buttonLogOut.Visible = true;
                 label2.Visible = true;
                 labelLoggedName.Visible = true;
-                labelLoggedName.Text = f1.ActiveUser.FirstName;
+                if (f1.ActiveUser != null)
+                {
+                    labelLoggedName.Text = f1.ActiveUser.FirstName;
+                } else
+                {
+                    labelLoggedName.Text = f1.ActiveAdmin.FirstName;
+                }
+
 
                 panel1.Visible = false;
                 LoginChoiceBtn.Visible = false;
@@ -183,7 +204,7 @@ namespace SportStudio
             PostalCodeInput.Text = "";
         }
 
-        private void allowOnlyNumbers (object sender, KeyPressEventArgs e)
+        private void allowOnlyNumbers(object sender, KeyPressEventArgs e)
         {
             if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
             {
