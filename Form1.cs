@@ -15,6 +15,9 @@ namespace SportStudio
         User user1;
         User user2;
         User user3;
+        User user4;
+        User user5;
+        User user6;
         Admin admin;
 
         public Form1()
@@ -24,17 +27,17 @@ namespace SportStudio
             user1 = new User("johannes@outlook.com", "jg", "Johannes", "Gabrielsen", "Bechtleweg", 21, "Heilbronn", 74076);
             user2 = new User("ruven@outlook.com", "rr", "Ruven", "Radicke", "Kleiner Bechtleweg", 69, "Schwabbach", 79009);
             user3 = new User("marc@outlook.com", "mm", "Marc", "Meister", "Großer Bechtleweg", 99, "Heilbronn", 74078);
-            User user4 = new User("q", "q", "q", "q", "q", 1, "q", 1);
-            PremiumUser pro = new PremiumUser(user4);
-            User user5 = new User("z", "z", "z", "z", "z", 1, "z", 1);
-            admin = new Admin("g", "g", "AdminGuy");
+            user4 = new User("luis@outlook.com", "lh", "Luis", "Höpfner", "Großer Bechtleweg", 77, "Heilbronn", 74078);
+            user5 = new User("kadir@outlook.com", "kö", "Kadir", "Özcan", "Bechtlegasse", 12, "Heilbronn", 74074);
+            user6 = new User("felix@outlook.com", "fu", "Felix", "Ulmer", "Bechtlestraße", 99, "Neckarsulm", 74002);
+            admin = new Admin("admin@outlook.com", "admin", "Admin the Plug");
             admins.Add(admin);
-            activUser = user1;
             users.Add(user1);
             users.Add(user2);
             users.Add(user3);
-            users.Add(pro);
+            users.Add(user4);
             users.Add(user5);
+            users.Add(user6);
         }
 
         public User? ActiveUser

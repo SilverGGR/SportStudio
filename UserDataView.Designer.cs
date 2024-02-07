@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserDataView));
             userBindingSource2 = new BindingSource(components);
             userBindingSource = new BindingSource(components);
             userBindingSource1 = new BindingSource(components);
@@ -77,10 +78,10 @@
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { idDataGridViewTextBoxColumn, Email, Password, FirstName, LastName, Street, StreetNumber, City, PostalCode });
             dataGridView1.DataSource = userBindingSource;
-            dataGridView1.Location = new Point(12, 12);
+            dataGridView1.Location = new Point(2, 12);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(944, 150);
+            dataGridView1.Size = new Size(951, 150);
             dataGridView1.TabIndex = 1;
             // 
             // idDataGridViewTextBoxColumn
@@ -147,7 +148,7 @@
             dataGridView2.Location = new Point(952, 12);
             dataGridView2.Name = "dataGridView2";
             dataGridView2.RowTemplate.Height = 25;
-            dataGridView2.Size = new Size(643, 150);
+            dataGridView2.Size = new Size(652, 150);
             dataGridView2.TabIndex = 2;
             // 
             // idDataGridViewTextBoxColumn1
@@ -209,6 +210,7 @@
             Controls.Add(button1);
             Controls.Add(dataGridView2);
             Controls.Add(dataGridView1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(3, 2, 3, 2);
             Name = "UserDataView";
             Text = "UserDataView";

@@ -130,7 +130,7 @@ namespace SportStudio
         {
             DialogResult result = MessageBox.Show("Sie haben noch zeit umzukehren!", "Unnormal Spannendes Geheimnis", MessageBoxButtons.AbortRetryIgnore, MessageBoxIcon.Warning);
 
-            if (result == DialogResult.Ignore) 
+            if (result == DialogResult.Ignore)
             {
                 PremiumUser user1 = new PremiumUser(f1.ActiveUser);
 

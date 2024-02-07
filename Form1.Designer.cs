@@ -1006,6 +1006,7 @@
             linkDataView.Size = new Size(116, 20);
             linkDataView.TabIndex = 23;
             linkDataView.Text = "Datenansicht";
+            linkDataView.Visible = false;
             linkDataView.Click += linkDataView_Click;
             // 
             // Form1
@@ -1026,6 +1027,7 @@
             Controls.Add(buttonCardio);
             Controls.Add(buttonWasser);
             Controls.Add(buttonWellness);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

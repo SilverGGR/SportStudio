@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserLogin));
             label1 = new Label();
             linkAnmeldung = new Label();
             pictureBox1 = new PictureBox();
@@ -356,9 +357,10 @@
             Controls.Add(label1);
             Controls.Add(linkAnmeldung);
             Controls.Add(pictureBox1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(3, 2, 3, 2);
             Name = "UserLogin";
-            Text = "UserLogin";
+            Text = "Anmeldung";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboScreen));
             linkAbo = new Label();
             label1 = new Label();
             pictureBox1 = new PictureBox();
@@ -323,9 +324,10 @@
             Controls.Add(label1);
             Controls.Add(pictureBox1);
             Controls.Add(label2);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(3, 2, 3, 2);
             Name = "AboScreen";
-            Text = "AboScreen";
+            Text = "Abo";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
